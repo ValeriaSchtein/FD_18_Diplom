@@ -1,0 +1,93 @@
+@media (max-width: 640px) {
+    .desktop {
+        display: none;
+    }
+    .mobile_versia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .up_part {
+        width: 100%;
+        padding: 15px 30px 15px 35px;
+        background-color: #027B89;
+        color: #ffffff;
+    }
+    .up_part .brend_atributs {
+        justify-content: flex-start;
+    }
+    .rubrics_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+    }
+    .name_rubric {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .links_names {
+        margin-top: 6px;
+    }
+    .social_links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .text_links {
+        font-size: 18px;
+    }
+    .social_icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .item_icon.network {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    .down_part {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 20px 15px 35px;
+        color: #001D5B;
+        background-color: #FAF4F4;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 16px;
+    }
+    .img_copyright {
+        width: 25px;
+        height: 25px;
+        margin-left: -2px;
+    }
+    .payments {
+        font-size: 14px;
+        margin-top: 3px;
+        padding-right: 15px;
+    }
+    .box_pay {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pay {
+        width: 45%;
+        height: 45px;
+    }
+    .arrow_up {
+        position: fixed;
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+        top: 92%;
+        left: 2%;
+    }
+}
