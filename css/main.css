@@ -1,6 +1,6 @@
     @media (max-width: 640px) {
         h3 {
-            font-size: 15px;
+            font-size: 1.5rem;
         }
         .main_page {
             display: flex;
@@ -54,7 +54,7 @@
             color: #ffffff;
         }
         .book_title {
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 500;
             margin-bottom: 9px;
         }
@@ -63,13 +63,13 @@
             margin-left: 12px;
         }
         .banner_text {
-            font-size: 12px;
+            font-size: 1.2rem;
             line-height: 14px;
         }
         .author_banner {
             margin-top: 7px;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 1.4rem;
             line-height: 16px;
         }
         .slick_dots {
@@ -147,7 +147,7 @@
             width: 70px;
         }
         .name_book {
-            font-size: 10px;
+            font-size: 1rem;
             line-height: 11px;
             color: #001D5B;
         }
@@ -155,7 +155,7 @@
             margin-bottom: 5px;
         }
         .name_author {
-            font-size: 9px;
+            font-size: 0.9rem;
             line-height: 10px;
             color: #0293A4;
         }
@@ -172,14 +172,14 @@
         }
         .price_rouble {
             font-weight: 500;
-            font-size: 13px;
+            font-size: 1.3rem;
             line-height: 15px;
         }
         .buy {
             width: 59px;
             height: 22px;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 1.2rem;
             line-height: 14px;
             color: #ffffff;
             background-color: #E54B7C;
@@ -193,7 +193,7 @@
             width: 87px;
             height: 35.5px;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 1.2rem;
             line-height: 14px;
             color: #ffffff;
             background-color: #E54B7C;
@@ -208,7 +208,7 @@
             height: 130px;
             position: relative;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 20px;
         }
         .publishing_news.slide_arrow {
             flex-direction: row;
@@ -245,7 +245,7 @@
         }
         .name_new {
             text-decoration: underline;
-            font-size: 18px;
+            font-size: 1.8rem;
             line-height: 22px;
             color: #ffffff;
         }
@@ -288,7 +288,7 @@
             margin-bottom: 10px;
         }
         .name_prg {
-            font-size: 14px;
+            font-size: 1.4rem;
             color: #001D5B;
         }
         /*==== URANIA-WORLD SERVIS ====*/
@@ -368,11 +368,11 @@
         }
         .author,
         .course {
-            font-size: 12px;
+            font-size: 1.2rem;
             line-height: 14px;
         }
         .data {
-            font-size: 14px;
+            font-size: 1.4rem;
             margin-left: auto;
         }
         .data,
@@ -380,7 +380,7 @@
             line-height: 17px;
         }
         .thema {
-            font-size: 18px;
+            font-size: 1.8rem;
             font-weight: normal;
         }
         .author_link_banner {
@@ -406,7 +406,7 @@
         }
         .subscription {
             font-weight: 500;
-            font-size: 15px;
+            font-size: 1.5rem;
             line-height: 17px;
             color: #001D5B;
         }

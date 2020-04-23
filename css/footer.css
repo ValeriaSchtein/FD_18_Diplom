@@ -2,7 +2,7 @@
     .desktop {
         display: none;
     }
-    .mobile_versia {
+    .mobile_versia.footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -24,7 +24,7 @@
     }
     .name_rubric {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     .links_names {
         margin-top: 6px;
@@ -36,7 +36,7 @@
         margin-top: 10px;
     }
     .text_links {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
     .social_icons {
         display: flex;
@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     .img_copyright {
         width: 25px;
@@ -68,7 +68,7 @@
         margin-left: -2px;
     }
     .payments {
-        font-size: 14px;
+        font-size: 1.4rem;
         margin-top: 3px;
         padding-right: 15px;
     }
