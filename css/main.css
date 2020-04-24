@@ -7,7 +7,7 @@
             flex-direction: column;
             justify-content: center;
             background-color: #FAF4F4;
-            padding-top: 15px;
+            padding-top: 4.5%;
             z-index: 99;
         }
         /*===== BANNER BLOCK ====*/
@@ -18,20 +18,20 @@
             justify-content: center;
         }
         .title_block {
-            padding-left: 35px;
+            padding-left: 11%;
         }
         .name_block {
             text-decoration: underline;
+            font-size: 4.7vmin;
         }
         .banner_big {
             box-sizing: border-box;
             width: 100%;
-            height: 140px;
             background-image: url("../img/BG_img/BG_bannerBig_mob.jpg");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            margin-top: 15px;
+            margin-top: 1.5rem;
             position: relative;
         }
         .banner_container {
@@ -40,46 +40,44 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             width: auto;
-            padding: 15px 15px 3px 20px;
-        }
-        .photo-img {
-            width: 75px;
-            margin-right: 8px;
+            padding: 3% 4% 2.6% 6.4%;
+            position: relative;
         }
         .banner_content {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             color: #ffffff;
+            margin-left: 7%;
+        }
+        .photo-img {
+            width: 23vw;
         }
         .book_title {
-            font-size: 1.6rem;
+            font-size: 4.5vw;
             font-weight: 500;
-            margin-bottom: 9px;
-        }
-        .banner_text,
-        .author_banner {
-            margin-left: 12px;
+            margin-bottom: 0.9rem;
+            margin-left: -7px;
         }
         .banner_text {
-            font-size: 1.2rem;
-            line-height: 14px;
+            font-size: 3.5vw;
+            line-height: 1.5em;
         }
         .author_banner {
-            margin-top: 7px;
+            margin-top: 0.5em;
             font-weight: 300;
-            font-size: 1.4rem;
-            line-height: 16px;
+            font-size: 3.65vw;
+            line-height: 1.6em;
         }
         .slick_dots {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-bottom: 10px;
             position: absolute;
             left: 40%;
+            top: 90%;
         }
         .item_slick:not(:first-child) {
             margin-left: 12px;
@@ -103,11 +101,10 @@
         }
         /*===== BOOKS BLOK 1 ====*/
         .book_block {
-            margin-top: 20px;
+            margin-top: 4%;
         }
         .content_block {
-            margin-top: 15px;
-            width: 100%;
+            margin-top: 3.4%;
         }
         .book_blocks.slide_arrow {
             display: none;
@@ -116,52 +113,51 @@
         .block_astroprg {
             overflow: hidden;
             display: flex;
-            width: auto;
+            width: 250%;
             flex-direction: row;
             align-items: flex-start;
-            padding-left: 35px;
+            padding-left: 11%;
         }
         .book_card {
             display: flex;
             flex-direction: column;
-            width: 120px;
-            height: 215px;
+            width: 15%;
+            min-height: 23.5em;
             flex-shrink: 0;
-            margin-right: 7px;
+            margin-right: 1.3%;
             position: relative;
         }
         .flag_icon {
             display: block;
-            width: 34px;
-            height: 39px;
+            width: 30%;
             padding: 7px;
             position: absolute;
-            right: 20px;
+            right: 12%;
             top: -7px;
         }
         .elements_card {
             width: 83%;
-            margin-top: 3px;
+            min-height: 6em;
+            margin-top: 1em;
         }
         .picture_book {
-            width: 70px;
+            width: 60%;
         }
         .name_book {
-            font-size: 1rem;
-            line-height: 11px;
+            font-size: 3.1vmin;
+            line-height: 1.1em;
             color: #001D5B;
         }
         .author {
-            margin-bottom: 5px;
+            margin-bottom: 0.5em;
         }
         .name_author {
-            font-size: 0.9rem;
-            line-height: 10px;
+            font-size: 3vmin;
+            line-height: 1em;
             color: #0293A4;
         }
         .price_block {
             margin-top: auto;
-            height: 50px;
         }
         .book_price {
             display: flex;
@@ -172,32 +168,30 @@
         }
         .price_rouble {
             font-weight: 500;
-            font-size: 1.3rem;
-            line-height: 15px;
+            font-size: 4vmin;
         }
         .buy {
-            width: 59px;
-            height: 22px;
+            width: 55%;
+            height: 2.3em;
             font-weight: 500;
-            font-size: 1.2rem;
-            line-height: 14px;
+            font-size: 3vmin;
             color: #ffffff;
             background-color: #E54B7C;
-            background-size: 59px 22px;
+            background-size: 55% 2em;
             border: none;
         }
         .request {
             margin-top: auto;
         }
         .button_request {
-            width: 87px;
-            height: 35.5px;
+            width: 80%;
+            height: 3.2em;
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.2em;
             line-height: 14px;
             color: #ffffff;
             background-color: #E54B7C;
-            background-size: 59px 22px;
+            background-size: 80% 3.2em;
             border: none;
         }
         /*==== NEWS BLOCK ====*/
@@ -362,11 +356,11 @@
             margin-top: auto;
         }
         .data,
-        .author,
+        .content_author.author,
         .course {
             font-weight: 500;
         }
-        .author,
+        .content_author.author,
         .course {
             font-size: 1.2rem;
             line-height: 14px;
@@ -386,7 +380,7 @@
         .author_link_banner {
             color: #ffffff;
         }
-        .author {
+        .author_link_banner.author {
             text-decoration: underline;
         }
         .servise_block.desktop {
