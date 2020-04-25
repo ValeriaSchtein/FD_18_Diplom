@@ -6,11 +6,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 6%;
     }
     .up_part {
         width: 100%;
-        padding: 15px 30px 15px 35px;
+        padding: 5% 10% 5% 12%;
         background-color: #027B89;
         color: #ffffff;
     }
@@ -20,14 +20,14 @@
     .rubrics_list {
         display: flex;
         flex-direction: column;
-        margin-top: 18px;
+        margin-top: 5%;
     }
     .name_rubric {
         color: #ffffff;
         font-size: 1.4rem;
     }
     .links_names {
-        margin-top: 6px;
+        margin-top: 1rem;
     }
     .social_links {
         display: flex;
@@ -52,7 +52,7 @@
     .down_part {
         display: flex;
         flex-direction: column;
-        padding: 5px 20px 15px 35px;
+        padding: 4% 6% 5% 11%;
         color: #001D5B;
         background-color: #FAF4F4;
     }
@@ -69,25 +69,23 @@
     }
     .payments {
         font-size: 1.4rem;
-        margin-top: 3px;
-        padding-right: 15px;
+        margin-top: 1.5%;
+        padding-right: 5%;
     }
     .box_pay {
-        margin-top: 5px;
+        margin-top: 2.5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     .pay {
         width: 45%;
-        height: 45px;
     }
     .arrow_up {
         position: fixed;
-        width: 24px;
-        height: 24px;
+        width: 8vmin;
         padding: 4px;
         top: 92%;
-        left: 2%;
+        left: 90vmin;
     }
 }
