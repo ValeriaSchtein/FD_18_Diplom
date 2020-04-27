@@ -22,7 +22,10 @@
         color: #ffffff;
     }
     .menu_gumburger {
-        display: none;
+        width: 6.25%;
+        height: 6.25%;
+        align-self: center;
+        margin-right: 3px;
     }
     .brend_atributs {
         display: flex;
@@ -34,8 +37,8 @@
     }
     .logo {
         align-items: center;
-        width: 8.5vmin;
-        height: 11vmin;
+        width: 8.5vw;
+        height: 11vw;
         background-color: #ffffff;
         margin-right: 6px;
     }
@@ -51,12 +54,12 @@
         align-items: center;
     }
     .company_name {
-        font-size: 6.3vmin;
+        font-size: 6.5vw;
         font-weight: 700;
         letter-spacing: 0.1em;
     }
     .internet_store {
-        font-size: 2.6vw;
+        font-size: 3vw;
         font-weight: 400;
         justify-content: center;
         letter-spacing: 0.1em;
