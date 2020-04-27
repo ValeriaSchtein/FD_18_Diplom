@@ -178,7 +178,7 @@
    
    .name_book {
        font-size: 4vw;
-       line-height: 1.1em;
+       line-height: 1.3em;
        color: #001D5B;
    }
    
@@ -211,16 +211,18 @@
    .price_rouble {
        font-weight: 500;
        font-size: 4.3vw;
+       color: #001D5B;
    }
    
    .buy {
-       width: 63%;
-       padding: 6%;
+       width: 52%;
+       padding: 4%;
        font-weight: 500;
        font-size: 4.3vw;
        color: #ffffff;
        background-color: #E54B7C;
        border: none;
+       margin-right: 10%;
    }
    
    .request {
@@ -338,7 +340,7 @@
        flex-direction: column;
        justify-content: flex-end;
        align-items: center;
-       width: 13%;
+       width: 9%;
        position: relative;
        margin-right: 5%;
        margin-top: 2%;
@@ -736,23 +738,30 @@
            padding-right: 6%;
            margin-top: 3%;
            justify-content: center;
+           position: relative;
        }
        .service_container {
            display: flex;
            flex-direction: row;
            align-items: center;
+           justify-content: space-between;
        }
        .item_service:last-child {
            display: none;
+       }
+       .item_service {
            flex-direction: column;
-           width: 48%;
+           width: 49%;
+           justify-content: center;
        }
        .title_service {
            font-size: 2.85vw;
            text-decoration: underline;
+           padding-left: 0;
        }
        .banner_service {
-           margin-top: 2%;
+           box-sizing: border-box;
+           margin-top: 5%;
            width: 100%;
            display: flex;
            flex-direction: column;
@@ -763,11 +772,11 @@
            color: #ffffff;
        }
        .education {
-           padding: 6.2% 8.2% 16.2% 7.3%;
+           padding: 7% 1% 19.6% 7.4%;
            background-image: url("../img/BG_img/BG_education@2x.jpg");
        }
        .consultation {
-           padding: 14.7% 23.5% 14.7% 11.7%;
+           padding: 18% 7.4% 13% 7.4%;
            background-image: url("../img/BG_img/BG_consultations@2x.jpg");
        }
        .name_service {
@@ -775,9 +784,33 @@
        }
        .type {
            font-size: 2.1vw;
+           font-weight: normal;
        }
        .author_service {
            font-weight: 300;
            font-size: 2.8vw;
+       }
+       .link_service {
+           color: #ffffff;
+           font-weight: 700;
+           font-size: 2.8vw;
+           line-height: 1.3em;
+           letter-spacing: 1px;
+       }
+       .name_service {
+           margin-bottom: 5.3%;
+       }
+       .type {
+           margin-bottom: 7.5%;
+       }
+       .subscription_news {
+           display: none;
+       }
+       .arrow_up {
+           position: absolute;
+           width: 4vw;
+           padding: 0;
+           top: 99%;
+           right: 2%;
        }
    }

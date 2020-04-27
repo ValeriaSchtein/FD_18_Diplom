@@ -1,106 +1,244 @@
-.desktop {
-    display: none;
-}
-
-.mobile_versia.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 6%;
-}
-
-.up_part {
-    width: 100%;
-    padding: 5% 10% 5% 12%;
-    background-color: #027B89;
-    color: #ffffff;
-}
-
-.up_part .brend_atributs {
-    justify-content: flex-start;
-}
-
-.rubrics_list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-}
-
-.name_rubric {
-    color: #ffffff;
-    font-size: 1.4rem;
-}
-
-.links_names {
-    margin-top: 1rem;
-}
-
-.social_links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.text_links {
-    font-size: 1.8rem;
-}
-
-.social_icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.item_icon.network {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.down_part {
-    display: flex;
-    flex-direction: column;
-    padding: 4% 6% 5% 11%;
-    color: #001D5B;
-    background-color: #FAF4F4;
-}
-
-.copyright {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.6rem;
-}
-
-.img_copyright {
-    width: 25px;
-    height: 25px;
-    margin-left: -2px;
-}
-
-.payments {
-    font-size: 1.4rem;
-    margin-top: 1.5%;
-    padding-right: 5%;
-}
-
-.box_pay {
-    margin-top: 2.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.pay {
-    width: 45%;
-}
-
-.arrow_up {
-    position: fixed;
-    width: 8vmin;
-    padding: 4px;
-    top: 92%;
-    left: 90vmin;
-}
+                         .desktop_footer {
+                             display: none;
+                         }
+                         
+                         .mobile_versia.footer {
+                             position: relative;
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: space-between;
+                             margin-top: 6%;
+                         }
+                         
+                         .up_part {
+                             width: 100%;
+                             padding: 5% 10% 5% 12%;
+                             background-color: #027B89;
+                             color: #ffffff;
+                         }
+                         
+                         .up_part .brend_atributs {
+                             justify-content: flex-start;
+                         }
+                         
+                         .rubrics_list {
+                             display: flex;
+                             flex-direction: column;
+                             margin-top: 5%;
+                         }
+                         
+                         .name_rubric {
+                             color: #ffffff;
+                             font-size: 1.4rem;
+                         }
+                         
+                         .links_names {
+                             margin-top: 1rem;
+                         }
+                         
+                         .social_links {
+                             display: flex;
+                             flex-direction: row;
+                             align-items: center;
+                             margin-top: 10px;
+                         }
+                         
+                         .text_links {
+                             font-size: 1.8rem;
+                         }
+                         
+                         .social_icons {
+                             display: flex;
+                             flex-direction: row;
+                             align-items: center;
+                             margin-left: 1em;
+                         }
+                         
+                         .item_icon.network {
+                             width: 24px;
+                             height: 24px;
+                         }
+                         
+                         .item_icon.network:first-child {
+                             margin-right: 1em;
+                         }
+                         
+                         .down_part {
+                             display: flex;
+                             flex-direction: column;
+                             padding: 4% 6% 5% 11%;
+                             color: #001D5B;
+                             background-color: #FAF4F4;
+                         }
+                         
+                         .copyright {
+                             display: flex;
+                             flex-direction: row;
+                             align-items: center;
+                             font-size: 1.6rem;
+                         }
+                         
+                         .img_copyright {
+                             width: 25px;
+                             height: 25px;
+                             margin-left: -2px;
+                         }
+                         
+                         .payments {
+                             font-size: 1.4rem;
+                             margin-top: 1.5%;
+                             padding-right: 5%;
+                         }
+                         
+                         .box_pay {
+                             margin-top: 2.5%;
+                             display: flex;
+                             flex-direction: row;
+                             justify-content: space-between;
+                         }
+                         
+                         .pay {
+                             width: 45%;
+                         }
+                         
+                         .arrow_up_mobile {
+                             position: absolute;
+                             width: 4.5vw;
+                             padding: 0;
+                             top: 80%;
+                             right: 2%;
+                         }
+                         /*=====MEDIA QUARIES====*/
+                         
+                         @media (min-width: 641px) and (max-width: 960px) {
+                             .desktop_footer {
+                                 display: flex;
+                                 flex-direction: column;
+                                 justify-content: space-between;
+                                 margin-top: 6%;
+                                 background-color: #027B89;
+                                 color: #ffffff;
+                                 padding: 2.6% 6%;
+                             }
+                             .footer_caption {
+                                 display: flex;
+                                 flex-direction: row;
+                                 flex-wrap: nowrap;
+                                 justify-content: space-between;
+                                 align-items: flex-start;
+                             }
+                             .logo {
+                                 width: 7.4vw;
+                                 height: 9.5vw;
+                                 margin-right: 2em;
+                             }
+                             .subscription_block {
+                                 display: none;
+                             }
+                             .social_links {
+                                 display: flex;
+                                 flex-direction: row;
+                                 align-items: center;
+                                 margin-top: 10px;
+                             }
+                             .text_links {
+                                 font-size: 2.4vw;
+                             }
+                             .social_icons {
+                                 display: flex;
+                                 flex-direction: row;
+                                 align-items: center;
+                                 margin-left: 1em;
+                             }
+                             .item_icon.network {
+                                 width: 30px;
+                                 height: 30px;
+                             }
+                             .item_icon.network:first-child {
+                                 margin-right: 1em;
+                             }
+                             .menu_site {
+                                 display: flex;
+                                 flex-direction: row;
+                                 flex-wrap: nowrap;
+                                 justify-content: space-between;
+                                 margin-top: 2%;
+                                 letter-spacing: 1px;
+                                 font-weight: 300;
+                                 color: #ffffff;
+                             }
+                             .box {
+                                 display: flex;
+                                 flex-direction: row;
+                                 flex-wrap: nowrap;
+                             }
+                             .box.left {
+                                 width: 70%;
+                             }
+                             .rubrics_list:nth-child(2) {
+                                 display: none;
+                             }
+                             .rubrics_list {
+                                 display: flex;
+                                 flex-direction: column;
+                                 margin-top: 0;
+                             }
+                             .rubrics_list:first-child {
+                                 margin-right: 2%;
+                             }
+                             .name_rubric {
+                                 color: #ffffff;
+                                 font-size: 1.8vw;
+                             }
+                             .general_name {
+                                 letter-spacing: 1px;
+                             }
+                             .links_names {
+                                 margin-top: 1em;
+                             }
+                             .box.right {
+                                 display: flex;
+                                 flex-direction: column;
+                                 justify-content: space-between;
+                                 width: 35%;
+                             }
+                             .payments {
+                                 display: flex;
+                                 flex-direction: column;
+                                 justify-content: space-between;
+                                 font-size: 1.8vw;
+                                 margin-top: 1.5%;
+                                 padding-right: 0;
+                             }
+                             .text_payments {
+                                 align-self: flex-end;
+                                 font-size: 1.6vw;
+                                 line-height: 1.2em;
+                             }
+                             .box_pay {
+                                 margin-top: 6%;
+                                 display: flex;
+                                 flex-direction: row;
+                                 justify-content: space-between;
+                             }
+                             .pay {
+                                 width: 47%;
+                             }
+                             .img_copyright {
+                                 width: 25px;
+                                 height: 25px;
+                                 margin-left: -0.3em;
+                                 margin-right: 1em;
+                             }
+                             .copyright {
+                                 display: flex;
+                                 flex-direction: row;
+                                 align-items: center;
+                                 font-size: 1.6vw;
+                                 font-weight: 300;
+                                 margin-top: -3%;
+                             }
+                             .mobile_versia.footer {
+                                 display: none;
+                             }
+                         }

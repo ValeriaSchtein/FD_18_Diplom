@@ -63,6 +63,7 @@
         font-weight: 400;
         justify-content: center;
         letter-spacing: 0.1em;
+        margin-top: 0.3em;
     }
     .service_list {
         display: flex;
@@ -249,10 +250,11 @@
         letter-spacing: 0.1em;
     }
     .internet_store {
-        font-size: 1.8vw;
+        font-size: 1.6vw;
         font-weight: 400;
         justify-content: center;
         letter-spacing: 0.1em;
+        margin-top: 0.3em;
     }
     .search_container {
         display: flex;
