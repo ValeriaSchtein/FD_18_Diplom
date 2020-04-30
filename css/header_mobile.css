@@ -36,6 +36,8 @@
         align-items: center;
     }
     .logo {
+        display: flex;
+        justify-content: center;
         align-items: center;
         width: 8.5vw;
         height: 11vw;
@@ -115,7 +117,7 @@
         height: 2.3em;
         padding-left: 15px;
         border: 0px solid #A3D0C3;
-        border-radius: 20px;
+        border-radius: 2em;
         outline: none;
         background: #ffffff;
         color: #83B5B9;
@@ -127,18 +129,17 @@
     }
     .search_button {
         position: absolute;
-        font-size: 1rem;
         top: 0px;
         right: 0px;
-        width: 10%;
-        height: 2.3em;
+        width: 11%;
+        height: 100%;
         border: none;
         box-shadow: inset 0px 2px 4px grey;
         background-size: 1.9em;
         background-position: center;
         background-repeat: no-repeat;
-        background: #7BA7AB;
-        border-radius: 20px;
+        background: #0ABAC7;
+        border-radius: 2em;
         cursor: pointer;
     }
     .search_button:hover {
@@ -227,11 +228,13 @@
         align-items: center;
     }
     .logo {
+        display: flex;
+        justify-content: center;
         align-items: center;
         width: 5.9vw;
         height: 7.5vw;
         background-color: #ffffff;
-        margin-right: 6px;
+        margin-right: 0.7em;
     }
     .link_logo {
         padding: auto;
@@ -270,7 +273,7 @@
         height: 2.1em;
         padding-left: 15px;
         border: 0px solid #A3D0C3;
-        border-radius: 20px;
+        border-radius: 2em;
         outline: none;
         background: #ffffff;
         color: #83B5B9;
@@ -282,18 +285,17 @@
     }
     .search_button {
         position: absolute;
-        font-size: 1rem;
         top: 0px;
         right: 0px;
         width: 17%;
-        height: 2.1em;
+        height: 100%;
         border: none;
         box-shadow: inset 0px 2px 4px grey;
         background-size: 1.9em;
         background-position: center;
         background-repeat: no-repeat;
-        background: #7BA7AB;
-        border-radius: 20px;
+        background: #0ABAC7;
+        border-radius: 20em;
         cursor: pointer;
     }
     .search_button:hover {
@@ -334,4 +336,193 @@
     .icon_text {
         display: none;
     }
+}
+
+@media (min-width: 961px) {
+    .mobile_versia {
+        display: none;
+    }
+    .desktop_versia {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_sections,
+    .caption,
+    .menu_categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #FAF4F4;
+        padding: 0.5% 6%;
+        align-items: center;
+    }
+    .caption {
+        background-color: #027B89;
+        padding: 0.8% 6%;
+    }
+    .menu_categories {
+        justify-content: flex-end;
+        background-color: #E2EEEF;
+        border-bottom: 1px solid #74C1CA;
+        padding: 0.7% 6%;
+    }
+    .navigator_sections {
+        width: 57%;
+    }
+    .contacts {
+        width: 28%;
+    }
+    .section_items_list,
+    .contacts_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .section_link {
+        font-size: 1.15vw;
+        color: #001D5B;
+        text-transform: uppercase;
+    }
+    .contact_icon:nth-child(2) {
+        display: none;
+    }
+    .contact_icon,
+    .service_icon {
+        width: 2.4vw;
+        max-width: 38px;
+        margin-right: 1em;
+    }
+    .contact_icon.number {
+        width: 49%;
+        max-width: 49%;
+        margin-right: 0px;
+    }
+    .telephone_number {
+        font-size: 1.25vw;
+        color: #001D5B;
+    }
+    .caption_container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        color: #ffffff;
+        align-items: center;
+    }
+    .brend_atributs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: auto;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.2vw;
+        height: 5.3vw;
+        background-color: #ffffff;
+        margin-right: 1em;
+    }
+    .link_logo {
+        color: #001D5B;
+        font-size: 2vw;
+    }
+    .store_name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .company_name {
+        font-size: 2.5vw;
+        font-weight: 700;
+        letter-spacing: 0;
+    }
+    .internet_store {
+        font-size: 1vw;
+        font-weight: 400;
+        justify-content: center;
+        letter-spacing: 0.05em;
+        margin-top: 0.3em;
+    }
+    .search_container {
+        display: flex;
+        width: 47%;
+    }
+    .search_form {
+        position: relative;
+        width: 100%;
+    }
+    .search_input {
+        width: 100%;
+        padding: 0.9vw 1.2vw;
+        border: 0px solid #A3D0C3;
+        border-radius: 2em;
+        outline: none;
+        background: #ffffff;
+        color: #83B5B9;
+        box-shadow: inset 0px 3px 4px grey;
+    }
+    .search_input::placeholder {
+        color: #83B5B9;
+        font-size: 1.15vw;
+    }
+    .search_button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 11.2%;
+        height: 100%;
+        border: none;
+        box-shadow: inset 0px 2px 4px grey;
+        background-size: 1.9em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: #0ABAC7;
+        border-radius: 2em;
+        cursor: pointer;
+    }
+    .search_button:hover {
+        background-color: #027B89;
+    }
+    .loop {
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        top: 17%;
+        right: 12%;
+    }
+    .service_menu {
+        display: flex;
+        width: 13.6%;
+    }
+    .service_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .service_icon.tablet {
+        display: block;
+    }
+    .service_icon.smartphone {
+        display: none;
+    }
+    .service_icon {
+        margin-right: 5px;
+    }
+    .icon_text {
+        display: none;
+    }
+}
+
+
 }

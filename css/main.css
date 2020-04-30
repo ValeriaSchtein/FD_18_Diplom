@@ -5,6 +5,7 @@
            background-color: #FAF4F4;
            padding-top: 3%;
            z-index: 99;
+           padding-bottom: 6%;
        }
        /*===== BANNER BLOCK ====*/
        
@@ -110,9 +111,14 @@
            background-position: center;
            width: 3.5px;
            height: 3.5px;
-           border: 0 solid #ffffff;
+           border: 0 solid #81849F;
            background-color: #81849F;
            border-radius: 30px;
+       }
+       
+       .item_slick:nth-child(3) .dot {
+           border: 0 solid #ffffff;
+           background-color: #ffffff;
        }
        
        .banner_small {
@@ -124,12 +130,15 @@
            margin-top: 4%;
        }
        
-       .content_block {
-           margin-top: 3.4%;
+       .new .slide_arrow,
+       .bestsellers .slide_arrow,
+       .reccomend .slide_arrow,
+       .block_astroprg .slide_arrow {
+           display: none;
        }
        
-       .book_blocks.slide_arrow {
-           display: none;
+       .content_block {
+           margin-top: 3.4%;
        }
        
        .slider_container,
@@ -139,7 +148,6 @@
            width: 250%;
            flex-direction: row;
            padding-left: 11%;
-           padding-bottom: 6%;
        }
        
        .book_card {
@@ -167,6 +175,9 @@
        }
        
        .elements_card {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
            width: 83%;
            min-height: 6em;
            margin-top: 1em;
@@ -177,18 +188,17 @@
        }
        
        .name_book {
+           margin-top: 1em;
+       }
+       
+       .link_name_book {
            font-size: 4vw;
            line-height: 1.3em;
            color: #001D5B;
        }
        
-       .author {
-           margin-bottom: 0.5em;
-       }
-       
        .name_author {
            font-size: 3.6vw;
-           line-height: 1em;
            color: #0293A4;
        }
        
@@ -196,7 +206,7 @@
            width: 90%;
            display: flex;
            flex-direction: column;
-           height: 50px;
+           height: 16vw;
            margin-top: 1em;
        }
        
@@ -232,18 +242,13 @@
        .button_request {
            width: 80%;
            padding: 6%;
-           font-size: 4.2vw;
+           font-size: 4vw;
            font-weight: 500;
            line-height: 1em;
            color: #ffffff;
            background-color: #E54B7C;
            border: none;
            margin-top: 0.4em;
-       }
-       
-       .book_block.bestsellers,
-       .book_block.reccomend {
-           margin-top: 0;
        }
        /*==== NEWS BLOCK ====*/
        
@@ -256,12 +261,8 @@
            margin-top: 20px;
        }
        
-       .slide_arrow {
-           flex-direction: row;
-       }
-       
-       .arrow_left,
-       .arrow_right {
+       .publishing_news .arrow_left,
+       .publishing_news .arrow_right {
            position: absolute;
            display: block;
            width: 2.5em;
@@ -269,11 +270,11 @@
            padding: 7px;
        }
        
-       .arrow_right {
+       .publishing_news .arrow_right {
            right: 2vw;
        }
        
-       .arrow_left {
+       .publishing_news .arrow_left {
            left: 2vw;
        }
        
@@ -335,6 +336,10 @@
            display: none;
        }
        
+       .block_astroprg {
+           padding-bottom: 5%;
+       }
+       
        .prg_card {
            display: flex;
            flex-direction: column;
@@ -368,6 +373,23 @@
            margin-top: 20px;
        }
        
+       .service_block_mobile .arrow_left,
+       .service_block_mobile .arrow_right {
+           position: absolute;
+           display: block;
+           width: 2.5em;
+           top: 38%;
+           padding: 7px;
+       }
+       
+       .service_block_mobile .arrow_right {
+           right: 2vw;
+       }
+       
+       .service_block_mobile .arrow_left {
+           left: 2vw;
+       }
+       
        .title_service {
            padding-left: 11%;
        }
@@ -394,14 +416,24 @@
            background-repeat: no-repeat;
            background-position: center center;
            background-size: cover;
-           padding: 4% 7%;
+           padding: 4% 7% 6%;
            color: #ffffff;
            justify-content: space-between;
        }
        
-       .content_data,
-       .content_course {
+       .data,
+       .course {
            align-self: flex-end;
+       }
+       
+       .title_course {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+       }
+       
+       .content_author {
+           width: 45%;
        }
        
        .content_author {
@@ -513,12 +545,20 @@
            .banner_small.second_desktop {
                display: none;
            }
+           .small {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               width: 40%;
+           }
            .banner_small {
                display: flex;
                flex-direction: column;
-               width: 40%;
-               padding: 2.3% 2.8% 3.2% 2.8%;
-               background-image: url("../img/BG_img/BG_smallBanner1.jpg");
+               width: 100%;
+               height: 100%;
+               padding: 7.2% 7.2% 8%;
+               background-image: url(../img/BG_img/BG_smallBanner1.jpg);
                box-sizing: border-box;
                background-repeat: no-repeat;
                background-position: center center;
@@ -527,8 +567,13 @@
                justify-content: space-between;
                border-radius: 10px;
            }
-           .content_data,
-           .content_course {
+           .title_course {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+           }
+           .data,
+           .course {
                align-self: flex-end;
            }
            .data,
@@ -537,16 +582,25 @@
                font-weight: 500;
            }
            .name_author_course {
-               font-size: 1.8vw;
+               font-size: 1.9vw;
                margin-top: 3px;
+               letter-spacing: 1px;
            }
-           .data,
+           .data {
+               font-size: 2.5vw;
+               margin-bottom: 7%;
+           }
+           .content_author {
+               width: 100%;
+           }
            .course {
-               font-size: 2.3vw;
+               font-size: 2.5vw;
+               margin-top: 5%;
            }
            .thema {
-               font-size: 2.8vw;
+               font-size: 2.85vw;
                line-height: 1.2em;
+               margin-bottom: 1%;
            }
            .author_link_banner {
                color: #ffffff;
@@ -558,12 +612,45 @@
            .title_block {
                padding-left: 6%;
            }
+           .content_block {
+               position: relative;
+           }
+           .new .slide_arrow,
+           .bestsellers .slide_arrow,
+           .reccomend .slide_arrow {
+               display: flex;
+           }
+           .new .arrow_left,
+           .new .arrow_right,
+           .bestsellers .arrow_left,
+           .bestsellers .arrow_right,
+           .reccomend .arrow_left,
+           .reccomend .arrow_right {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 20%;
+               padding: 7px;
+           }
+           .new .arrow_right,
+           .bestsellers .arrow_right,
+           .reccomend .arrow_right {
+               right: 2vw;
+           }
+           .new .arrow_left,
+           .bestsellers .arrow_left,
+           .reccomend .arrow_left {
+               left: 2vw;
+           }
            .slider_container,
            .block_astroprg {
                width: 150%;
                padding-left: 6%;
            }
            .name_book {
+               margin-top: 1em;
+           }
+           .link_name_book {
                font-size: 1.8vw;
            }
            .name_author {
@@ -572,17 +659,17 @@
            .price_rouble {
                font-size: 2.1vw;
            }
-           .buy {
-               font-size: 2.1vw;
+           .price_block {
+               height: 9vw;
            }
-           .button_request {
+           .buy {
                font-size: 2.1vw;
            }
            /*==== NEWS BLOCK ====*/
            .publishing_news {
                flex-wrap: nowrap;
                justify-content: space-between;
-               margin-top: 5px;
+               margin-top: 4%;
            }
            .publishing_news .arrow_left,
            .publishing_news .arrow_right {
@@ -676,8 +763,10 @@
                margin-right: 6%;
            }
            .info .button_request {
-               width: 81%;
+               width: 85%;
                font-size: 2vw;
+               padding: 8% 3.5%;
+               margin-top: 1em;
            }
            .info_container {
                width: 46%;
@@ -696,12 +785,12 @@
                background-repeat: no-repeat;
                background-position: center center;
                background-size: cover;
-               padding: 8.7% 30% 20% 8.6%;
+               padding: 9.5% 30% 20% 8.6%;
            }
            .about {
                font-size: 3.1vw;
                text-decoration: underline;
-               line-height: 1.2em;
+               line-height: 1.4em;
            }
            .block_info.second {
                margin-top: 4%;
@@ -710,14 +799,18 @@
                display: flex;
                justify-content: center;
                align-items: center;
-               padding: 6.4% 0px 6.4%
+               padding: 6.7%;
            }
            .second .subscription {
                font-size: 2.4vw;
+               text-decoration: underline;
            }
            /*====  ASTROLOGYCAL PROGRAMMS ====*/
            .block_astroprg {
                width: 190%;
+           }
+           .block_astroprg .slide_arrow {
+               display: none;
            }
            .prg_card {
                width: 100%;
@@ -758,7 +851,6 @@
                justify-content: center;
            }
            .title_service {
-               font-size: 2.85vw;
                text-decoration: underline;
                padding-left: 0;
            }
@@ -773,6 +865,17 @@
                background-position: center center;
                background-size: cover;
                color: #ffffff;
+               position: relative;
+           }
+           .arrow_right {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 40%;
+               padding: 7px;
+           }
+           .arrow_right {
+               right: 2%;
            }
            .education {
                padding: 7% 1% 19.6% 7.4%;
@@ -812,6 +915,508 @@
            .arrow_up {
                position: absolute;
                width: 4vw;
+               padding: 0;
+               top: 99%;
+               right: 2%;
+           }
+       }
+       
+       @media (min-width: 961px) {
+           /*===== BANNER BLOCK ====*/
+           .upper_banner {
+               flex-direction: row;
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               padding-left: 6%;
+               padding-right: 6%;
+           }
+           .title_block.upper {
+               display: none;
+           }
+           .book_block {
+               margin-top: 2.5%;
+           }
+           .content_block {
+               margin-top: 1.5%;
+           }
+           .name_block,
+           .title_service {
+               font-size: 1.8vw;
+           }
+           .banner_big {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               width: 59.6%;
+               background-image: url("../img/BG_img/BG_bannerBig_mob.jpg");
+               border-radius: 10px;
+           }
+           .banner_container {
+               align-items: center;
+               padding: 3.7% 7.9% 4% 6.6%;
+           }
+           .banner_content {
+               margin-left: 4.5%;
+           }
+           .book_img {
+               width: 35%;
+           }
+           .book_title {
+               font-size: 2.5vw;
+               font-weight: 500;
+               margin-bottom: 7%;
+               margin-left: -7px;
+           }
+           .banner_text {
+               font-size: 1.7vw;
+               line-height: 1.2em;
+               padding-left: 3%;
+           }
+           .author_banner {
+               font-size: 1.7vw;
+               line-height: 1.2em;
+               padding-left: 3%;
+           }
+           .dot {
+               width: 0.5vw;
+               height: 0.5vw;
+           }
+           .item_slick:nth-child(3) .dot {
+               border: 0 solid #ffffff;
+               background-color: #ffffff;
+           }
+           .small {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               width: 39%;
+           }
+           .banner_small {
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+               padding: 3% 6% 4%;
+               background-image: url("../img/BG_img/BG_smallBanner1@2x.jpg");
+               box-sizing: border-box;
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               color: #ffffff;
+               justify-content: space-between;
+               border-radius: 10px;
+           }
+           .banner_small.second_desktop {
+               display: flex;
+               margin-top: 3%;
+               padding: 3% 6% 6%;
+               background-image: url("../img/BG_img/BG_smallBanner2@2x.jpg");
+           }
+           .title_course {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+           }
+           .second_desktop .title_course {
+               margin-top: 2%;
+           }
+           .data,
+           .course {
+               align-self: flex-end;
+           }
+           .data,
+           .content_author.author,
+           .course {
+               font-weight: 500;
+           }
+           .name_author_course {
+               font-size: 1.35vw;
+               margin-top: 3%;
+               letter-spacing: 0.2px;
+           }
+           .data {
+               font-size: 1.65vw;
+           }
+           .second_desktop .data {
+               margin-bottom: 3%;
+           }
+           .course {
+               font-size: 1.35vw;
+           }
+           .thema {
+               font-size: 1.9vw;
+               line-height: 1.2em;
+               padding-right: 10%;
+           }
+           .author_link_banner {
+               color: #ffffff;
+           }
+           .author_link_banner {
+               text-decoration: underline;
+           }
+           /*===== BOOKS BLOK 1 ====*/
+           .title_block {
+               padding-left: 6%;
+           }
+           .slider_container,
+           .block_astroprg {
+               width: 100%;
+               padding-left: 6%;
+           }
+           .content_block {
+               position: relative;
+           }
+           .new .slide_arrow,
+           .bestsellers .slide_arrow,
+           .reccomend .slide_arrow {
+               display: flex;
+           }
+           .new .arrow_left,
+           .new .arrow_right,
+           .bestsellers .arrow_left,
+           .bestsellers .arrow_right,
+           .reccomend .arrow_left,
+           .reccomend .arrow_right {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 20%;
+               padding: 7px;
+           }
+           .new .arrow_right,
+           .bestsellers .arrow_right,
+           .reccomend .arrow_right {
+               right: 2vw;
+           }
+           .new .arrow_left,
+           .bestsellers .arrow_left,
+           .reccomend .arrow_left {
+               left: 2vw;
+           }
+           .book_card {
+               width: 18.6%;
+           }
+           .flag_icon {
+               display: block;
+               width: 12%;
+               position: absolute;
+               left: 72%;
+               padding: 0;
+               top: 0;
+           }
+           .elements_card {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               width: 80%;
+               margin-top: 1.2em;
+           }
+           .name_book {
+               margin-top: 1em;
+           }
+           .link_name_book {
+               font-size: 1.2vw;
+           }
+           .name_author {
+               font-size: 1.1vw;
+           }
+           .price_block {
+               height: 5.6vw;
+           }
+           .price_rouble {
+               font-size: 1.38vw;
+           }
+           .buy,
+           .button_request {
+               font-size: 1.25vw;
+           }
+           /*==== NEWS BLOCK ====*/
+           .publishing_news {
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               margin-top: 3%;
+           }
+           .publishing_news .arrow_left,
+           .publishing_news .arrow_right {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 40%;
+               padding: 7px;
+           }
+           .publishing_news .arrow_right {
+               right: 2vw;
+           }
+           .publishing_news .arrow_left {
+               left: 2vw;
+           }
+           .publishing_news_container {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               width: 100%;
+               padding-left: 6%;
+               padding-right: 6%;
+           }
+           .block_new {
+               width: 36.45%;
+               padding: 5.5% 3% 5.2% 3.45%;
+           }
+           .block_new.second_new,
+           .block_new.third_new {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               box-sizing: border-box;
+               width: 24.5%;
+               justify-content: space-between;
+               background-image: url("../img/BG_img/BG_news2@2x.jpg");
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               padding: 2.1% 4.1% 3.8% 2.2%;
+           }
+           .block_new.third_new {
+               width: 36.45%;
+               padding: 7.6% 3% 4.4% 3.45%;
+               background-image: url("../img/BG_img/BG_news3.jpg");
+           }
+           .name_new {
+               font-size: 1.9vw;
+               line-height: 1.4em;
+           }
+           .person,
+           .who_is {
+               color: #ffffff;
+           }
+           .look {
+               text-decoration: underline;
+               font-size: 1.25vw;
+               line-height: 1.5em;
+               color: #ffffff;
+           }
+           .person {
+               font-size: 1.65vw;
+               margin-top: 10%;
+           }
+           .who_is {
+               font-size: 1.25vw;
+           }
+           .third_new {
+               display: none;
+               background-image: url("../img/BG_img/BG_news3.jpg");
+           }
+           .book_block.info {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               padding-left: 6%;
+               padding-right: 6%;
+               width: 100%;
+           }
+           .book_block.info .title_block,
+           .book_block.info .slider_container {
+               padding-left: 0px;
+           }
+           .info .planned_books {
+               width: 59%;
+               margin-top: 2.5%;
+           }
+           .info .slider_container {
+               width: 100%;
+               margin-top: 4%;
+           }
+           .info .book_card {
+               width: 33.3%;
+           }
+           .picture_book {
+               width: 68%;
+           }
+           .info .button_request {
+               width: 70%;
+               font-size: 1.25vw;
+               margin-top: 1em;
+           }
+           .info_container {
+               width: 36.6%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               padding-top: 6.7%;
+               margin-left: 0;
+               padding-bottom: 3%;
+           }
+           .block_info.first {
+               display: flex;
+               flex-direction: column;
+               box-sizing: border-box;
+               background-image: url("../img/BG_img/BG_soon1@2x.jpg");
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               padding: 13.5% 30% 22% 8.6%;
+           }
+           .about {
+               font-size: 1.65vw;
+               text-decoration: underline;
+               line-height: 1.5em;
+           }
+           .block_info.second {
+               margin-top: 4%;
+               width: 100%;
+               background: linear-gradient(180deg, #2AA4A4 0%, rgba(240, 248, 248, 0.479167) 52.08%, rgba(42, 164, 164, 0.94) 100%), #22B7B5;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 9.4% 0px;
+           }
+           .second .subscription {
+               font-size: 1.65vw;
+               text-decoration: underline;
+           }
+           /*====  ASTROLOGYCAL PROGRAMMS ====*/
+           .block_astroprg {
+               width: 100%;
+               position: relative;
+           }
+           .block_astroprg .slide_arrow {
+               display: flex;
+           }
+           .block_astroprg .arrow_right,
+           .block_astroprg .arrow_left {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 30%;
+               padding: 7px;
+           }
+           .block_astroprg .arrow_right {
+               right: 2vw;
+           }
+           .block_astroprg .arrow_left {
+               left: 2vw;
+           }
+           .prg_card {
+               width: 100%;
+           }
+           .prg_picture {
+               max-height: 12vw;
+               margin-bottom: 1em;
+           }
+           .name_prg {
+               font-size: 1.65vw;
+           }
+           /*==== URANIA-WORLD SERVIS ====*/
+           .service_block_mobile {
+               display: none;
+           }
+           .servise_block.desktop {
+               display: flex;
+               flex-direction: row;
+               width: 100%;
+               padding-left: 6%;
+               padding-right: 6%;
+               margin-top: 3%;
+               justify-content: space-between;
+               position: relative;
+           }
+           .service_container {
+               width: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               margin-top: 0;
+           }
+           .item_service {
+               flex-direction: column;
+               width: 32.6%;
+           }
+           .title_service {
+               text-decoration: underline;
+               padding-left: 0;
+           }
+           .banner_service {
+               box-sizing: border-box;
+               margin-top: 5%;
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               box-sizing: border-box;
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               color: #ffffff;
+               position: relative;
+           }
+           .banner_service .arrow_right {
+               position: absolute;
+               display: block;
+               width: 2.5em;
+               top: 40%;
+               padding: 7px;
+           }
+           .banner_service .arrow_right {
+               right: 2%;
+           }
+           .education {
+               padding: 5% 13.2% 16.9% 6.5%;
+               background-image: url("../img/BG_img/BG_education@2x.jpg");
+           }
+           .consultation {
+               padding: 12% 7.4% 12.3% 10%;
+               background-image: url("../img/BG_img/BG_consultations@2x.jpg");
+           }
+           .prognos {
+               padding: 9.7% 7.4% 12% 10%;
+               background-image: url("../img/BG_img/BG_prognosis@2x.jpg");
+           }
+           .banner_service .banner_text {
+               padding-left: 0;
+           }
+           .name_service {
+               font-size: 2.8vw;
+           }
+           .type {
+               font-size: 1.4vw;
+               font-weight: normal;
+               margin-left: 1vw;
+           }
+           .author_service {
+               font-weight: 300;
+               font-size: 1.65vw;
+               margin-left: 1vw;
+           }
+           .consultation .author_service,
+           .prognos .author_service {
+               margin-left: 0;
+           }
+           .year {
+               font-size: 1.9vw;
+               font-weight: 300;
+               margin-bottom: 5%;
+           }
+           .link_service {
+               color: #ffffff;
+               font-weight: 700;
+               font-size: 1.65vw;
+               line-height: 1.3em;
+               letter-spacing: 1px;
+           }
+           .name_service {
+               margin-bottom: 3%;
+           }
+           .type {
+               margin-bottom: 5%;
+           }
+           .subscription_news {
+               display: none;
+           }
+           .arrow_up {
+               position: absolute;
+               width: 2.5vw;
                padding: 0;
                top: 99%;
                right: 2%;

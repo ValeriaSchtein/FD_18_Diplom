@@ -7,7 +7,6 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     margin-top: 6%;
  }
  
  .up_part {
@@ -112,7 +111,6 @@
          display: flex;
          flex-direction: column;
          justify-content: space-between;
-         margin-top: 6%;
          background-color: #027B89;
          color: #ffffff;
          padding: 2.6% 6%;
@@ -125,9 +123,13 @@
          align-items: flex-start;
      }
      .logo {
-         width: 7.4vw;
-         height: 9.5vw;
-         margin-right: 1.3em;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 5.9vw;
+         height: 7.5vw;
+         background-color: #ffffff;
+         margin-right: 0.7em;
      }
      .subscription_block {
          display: none;
@@ -208,6 +210,168 @@
          font-size: 1.6vw;
          font-weight: 300;
          margin-top: -3%;
+     }
+     .mobile_versia.footer {
+         display: none;
+     }
+ }
+ 
+ @media (min-width: 961px) {
+     .desktop_footer {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         background-color: #027B89;
+         color: #ffffff;
+         padding: 2% 6% 1.5% 6%;
+     }
+     .footer_caption {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .brend_atributs {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         width: auto;
+         align-items: center;
+     }
+     .logo {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 4.2vw;
+         height: 5.3vw;
+         background-color: #ffffff;
+         margin-right: 1em;
+     }
+     .link_logo {
+         color: #001D5B;
+         font-size: 1.25vw;
+     }
+     .store_name {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .company_name {
+         font-size: 2.5vw;
+         font-weight: 700;
+         letter-spacing: 0;
+     }
+     .internet_store {
+         font-size: 1.1vw;
+         font-weight: 400;
+         justify-content: center;
+         letter-spacing: 0.05em;
+         margin-top: 0.3em;
+     }
+     .subscription_block {
+         display: flex;
+         flex-direction: column;
+         width: 40%;
+     }
+     .text_subscription {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 2%;
+         border-radius: 20px;
+         background-color: #ffffff;
+         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .subscription_footer {
+         font-size: 1.35vw;
+         color: #001D5B;
+         font-weight: 500;
+     }
+     .text_links {
+         font-size: 1.3vw;
+     }
+     .item_icon.network {
+         width: 30px;
+         height: 30px;
+     }
+     .menu_site {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         margin-top: 1.2%;
+         letter-spacing: 1px;
+         font-weight: 300;
+         color: #ffffff;
+         padding-left: 5.7%;
+     }
+     .box {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+     }
+     .box.left {
+         width: 64%;
+     }
+     .rubrics_list {
+         margin-top: 0;
+     }
+     .rubrics_list:first-child {
+         margin-right: 2%;
+     }
+     .name_rubric {
+         font-size: 1.1vw;
+     }
+     .general_name {
+         letter-spacing: 1px;
+     }
+     .box.right {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         width: 31%;
+     }
+     .payments {
+         width: 45%;
+         display: flex;
+         flex-direction: column;
+         font-size: 0.8vw;
+         margin-top: 1.5%;
+         padding-right: 0;
+     }
+     .text_payments {
+         align-self: flex-end;
+         font-size: 1.15vw;
+         line-height: 1.2em;
+     }
+     .box_pay {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-top: 0;
+     }
+     .pay {
+         width: 100%;
+         margin-top: 12%;
+     }
+     .img_copyright {
+         margin-left: -0.3em;
+         margin-right: 1em;
+     }
+     .copyright {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         font-size: 1vw;
+         font-weight: 300;
+         margin-top: 1%;
      }
      .mobile_versia.footer {
          display: none;
