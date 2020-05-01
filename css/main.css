@@ -189,11 +189,11 @@
        
        .name_book {
            margin-top: 1em;
+           font-size: 4vw;
+           line-height: 1.3em;
        }
        
        .link_name_book {
-           font-size: 4vw;
-           line-height: 1.3em;
            color: #001D5B;
        }
        
@@ -649,9 +649,11 @@
            }
            .name_book {
                margin-top: 1em;
+               font-size: 1.8vw;
+               line-height: 1.3em;
            }
            .link_name_book {
-               font-size: 1.8vw;
+               color: #001D5B;
            }
            .name_author {
                font-size: 1.7vw;
@@ -1114,9 +1116,10 @@
            }
            .name_book {
                margin-top: 1em;
+               font-size: 1.2vw;
            }
            .link_name_book {
-               font-size: 1.2vw;
+               color: #001D5B;
            }
            .name_author {
                font-size: 1.1vw;
