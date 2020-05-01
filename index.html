@@ -1,188 +1,50 @@
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<div lang="ru">
+    <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 
-<head>
-    <!-- Заголовок страницы в браузере -->
-    <title>Diplom_FD_nmuza</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/header_mobile.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <head>
+        <!-- Заголовок страницы в браузере -->
+        <title>Diplom_FD_nmuza</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/header_mobile.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
 
 
-    <!-- Кодировка страницы -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
+        <!-- Кодировка страницы -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
 
-<!-- Отображаемое тело страницы -->
+    <!-- Отображаемое тело страницы -->
 
-<body>
-    <!-- HEADER FOR MOBILE VERSIA -->
-    <header class="mobile_versia">
-        <div class="caption">
-            <div class="caption_container">
-                <div class="menu_gumburger">
-                    <a class="link_menu_gumburger" href="#">
-                        <img class="icon_gumb" src="img/icons/MobileVersia/Gumburger.png" alt="">
-                    </a>
-                </div>
-                <div class="brend_atributs">
-                    <div class="logo">
-                        <a class="link_logo" href="#">logo</a>
+    <body>
+        <!-- HEADER FOR MOBILE VERSIA -->
+        <header class="mobile_versia">
+            <div class="caption">
+                <div class="caption_container">
+                    <div class="menu_gumburger">
+                        <a class="link_menu_gumburger" href="#">
+                            <img class="icon_gumb" src="img/icons/MobileVersia/Gumburger.png" alt="">
+                        </a>
                     </div>
-                    <div class="store_name">
-                        <h1 class="company_name">
-                            "Мир Урании"
-                        </h1>
-                        <div class="internet_store">
-                            Интернет-магазин издательства
+                    <div class="brend_atributs">
+                        <div class="logo">
+                            <a class="link_logo" href="#">logo</a>
+                        </div>
+                        <div class="store_name">
+                            <h1 class="company_name">
+                                "Мир Урании"
+                            </h1>
+                            <div class="internet_store">
+                                Интернет-магазин издательства
+                            </div>
                         </div>
                     </div>
-                </div>
-                <ul class="service_list">
-                    <li class="service_icon">
-                        <a href="#" class="profile">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_3st_man 2.svg" alt="Иконка юзера">
-                            <span class="icon_text">Профиль</span>
-                        </a>
-                    </li>
-                    <li class="service_icon">
-                        <a href="#" class="basket">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_3st_bag 3.svg" alt="Иконка корзины">
-                            <span class="icon_text">Корзина</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="help_container">
-            <form class="search_form">
-                <label class="search_group">
-                    <input class="search_input" placeholder="Автор, книга, серия, раздел, тег" type="search">
-                </label>
-                <button class="search_button" type="submit">
-                     <svg class="loop" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.09516 4.71141C7.66185 3.31062 9.68317 2.60326 11.7778 2.71966C13.8761 2.83606 15.8036 3.76196 17.205 5.32658C20.0981 8.55729 19.8216 13.538 16.5887 16.4291C15.0894 17.7696 13.2148 18.4288 11.3458 18.4288C9.18373 18.4288 7.03033 17.546 5.47858 15.8133C2.58581 12.5832 2.86224 7.60253 6.09516 4.71141ZM6.22094 15.1504C8.74734 17.9722 13.1009 18.2136 15.925 15.6876C18.7491 13.1623 18.9904 8.81198 16.4636 5.99016C15.2394 4.6232 13.5556 3.81436 11.7231 3.71288C11.5927 3.70592 11.4632 3.70227 11.3338 3.70227C9.64169 3.70227 8.03021 4.31611 6.7592 5.4526C3.93512 7.97827 3.69387 12.3285 6.22094 15.1504Z" fill="white"/>
-                        <path d="M15.5796 6.76609C15.7631 6.97104 15.7455 7.28542 15.5408 7.46848C15.4455 7.55338 15.327 7.59516 15.2089 7.59516C15.0722 7.59516 14.9361 7.53945 14.8379 7.42935C13.1042 5.49364 10.1188 5.32849 8.18173 7.06025C7.97697 7.24364 7.6627 7.22606 7.47885 7.02145C7.29566 6.8165 7.31325 6.50212 7.51801 6.31906C9.86427 4.22119 13.4806 4.42215 15.5796 6.76609Z" fill="white"/>
-                        <path d="M0.756832 9.92954C0.925749 7.11336 2.18184 4.53198 4.29379 2.65995C6.40574 0.787912 9.11836 -0.147276 11.9392 0.0188695C14.757 0.187668 17.3405 1.44288 19.2135 3.55335C22.9685 7.78391 22.6984 14.2125 18.6875 18.1194L20.4042 20.0767L20.9548 19.5888C21.1602 19.4064 21.4735 19.425 21.656 19.6293L27.6295 26.3C27.7178 26.3981 27.7629 26.5275 27.7556 26.6591C27.7483 26.7908 27.6889 26.9145 27.5906 27.0024L25.714 28.6807C25.6187 28.7656 25.5003 28.8074 25.3821 28.8074C25.2454 28.8074 25.1093 28.7514 25.0111 28.6416L19.0297 21.9623C18.9414 21.8638 18.8959 21.7341 18.9036 21.6018C18.9112 21.4702 18.9713 21.3461 19.0702 21.2586L19.6592 20.7366L17.9435 18.7807C16.0575 20.3052 13.7422 21.1233 11.3209 21.1233C11.1062 21.1233 10.8902 21.1166 10.6741 21.1037C7.8563 20.9346 5.27278 19.6794 3.39943 17.5689C1.52608 15.4584 0.587917 12.7457 0.756832 9.92954ZM25.421 27.6076L26.5556 26.5928L21.2445 20.662L20.1049 21.6718L25.421 27.6076ZM4.14445 16.909C5.84125 18.8208 8.18152 19.9576 10.7339 20.1105C13.2859 20.2677 15.7456 19.4137 17.6588 17.7185C21.6079 14.2181 21.9713 8.15965 18.4685 4.21329C16.7717 2.30146 14.4314 1.16464 11.8791 1.01176C11.6833 0.999822 11.4882 0.994184 11.2934 0.994184C8.95243 0.994184 6.72035 1.83851 4.95386 3.40412C3.04069 5.09973 1.90308 7.43836 1.75009 9.9889C1.59743 12.5398 2.44799 14.9975 4.14445 16.909Z" fill="white"/>
-                    </svg>
-                </button>
-            </form>
-            <ul class="service_list">
-                <li class="service_icon">
-                    <a href="#" class="hold">
-                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue_navig.svg" alt="Иконка отложенное">
-                        <span class="icon_text">Отложенное</span>
-                    </a>
-                </li>
-                <li class="service_icon">
-                    <a href="#" class="help">
-                        <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question_blue.svg" alt="Иконка помощь">
-                        <span class="icon_text">Помощьь</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </header>
-
-    <!-- HEADER FOR DESKTOP -->
-    <header class="desktop_versia">
-        <div class="menu_sections">
-            <nav class="navigator_sections">
-                <ul class="section_items_list">
-                    <li class="section_item">
-                        <a href="#" class="section_link">Об издательстве</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Каталог</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Новости</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Астрологический портал</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Авторам</a>
-                    </li>
-
-                </ul>
-            </nav>
-            <div class="contacts">
-                <ul class="contacts_list">
-                    <li class="contact_icon">
-                        <a href="tel:74956247124" class="telephone_number">
-                            <span>+7(495)-624-71-24</span>
-                        </a>
-                    </li>
-                    <li class="contact_icon">
-                        <a href="#" class="telephone_icon">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_2web_phone 1.svg" alt="Иконка телефона">
-                            <span class="icon_text">телефон</span>
-                        </a>
-                    </li>
-                    <li class="contact_icon">
-                        <a href="#" class="location_icon">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_13ph_location 1.svg" alt="Иконка локации">
-                            <span class="icon_text">Локация</span>
-                        </a>
-                    </li>
-                    <li class="contact_icon">
-                        <a href="#" class="location_icon">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_1ed_mail 2.svg" alt="Иконка почты">
-                            <span class="icon_text">Почта</span>
-                        </a>
-                    </li>
-                    <li class="contact_icon">
-                        <a href="#" class="social_link facebook_up">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_26sn_facebook 2.svg" alt="Иконка Facebook">
-                            <span class="icon_text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="contact_icon">
-                        <a href="#" class="social_link vkontakte_up">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_26sn_vkontakte 2.svg" alt="Иконка Вконтакте">
-                            <span class="icon_text">Вконтакте</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="caption">
-            <div class="caption_container">
-                <div class="brend_atributs">
-                    <div class="logo">
-                        <a class="link_store" href="#"></a>
-                    </div>
-                    <div class="store_name">
-                        <h1 class="company_name">
-                            "Мир Урании"
-                        </h1>
-                        <p class="internet_store">Интернет-магазин издательства</p>
-                    </div>
-                </div>
-                <div class="search_container">
-                    <form class="search_form">
-                        <label class="search_group">
-                                    <input class="search_input" placeholder="Автор, книга, серия, раздел, тег" type="search">
-                                </label>
-                        <button class="search_button" type="submit">
-                                     <svg class="loop" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.09516 4.71141C7.66185 3.31062 9.68317 2.60326 11.7778 2.71966C13.8761 2.83606 15.8036 3.76196 17.205 5.32658C20.0981 8.55729 19.8216 13.538 16.5887 16.4291C15.0894 17.7696 13.2148 18.4288 11.3458 18.4288C9.18373 18.4288 7.03033 17.546 5.47858 15.8133C2.58581 12.5832 2.86224 7.60253 6.09516 4.71141ZM6.22094 15.1504C8.74734 17.9722 13.1009 18.2136 15.925 15.6876C18.7491 13.1623 18.9904 8.81198 16.4636 5.99016C15.2394 4.6232 13.5556 3.81436 11.7231 3.71288C11.5927 3.70592 11.4632 3.70227 11.3338 3.70227C9.64169 3.70227 8.03021 4.31611 6.7592 5.4526C3.93512 7.97827 3.69387 12.3285 6.22094 15.1504Z" fill="white"/>
-                                        <path d="M15.5796 6.76609C15.7631 6.97104 15.7455 7.28542 15.5408 7.46848C15.4455 7.55338 15.327 7.59516 15.2089 7.59516C15.0722 7.59516 14.9361 7.53945 14.8379 7.42935C13.1042 5.49364 10.1188 5.32849 8.18173 7.06025C7.97697 7.24364 7.6627 7.22606 7.47885 7.02145C7.29566 6.8165 7.31325 6.50212 7.51801 6.31906C9.86427 4.22119 13.4806 4.42215 15.5796 6.76609Z" fill="white"/>
-                                        <path d="M0.756832 9.92954C0.925749 7.11336 2.18184 4.53198 4.29379 2.65995C6.40574 0.787912 9.11836 -0.147276 11.9392 0.0188695C14.757 0.187668 17.3405 1.44288 19.2135 3.55335C22.9685 7.78391 22.6984 14.2125 18.6875 18.1194L20.4042 20.0767L20.9548 19.5888C21.1602 19.4064 21.4735 19.425 21.656 19.6293L27.6295 26.3C27.7178 26.3981 27.7629 26.5275 27.7556 26.6591C27.7483 26.7908 27.6889 26.9145 27.5906 27.0024L25.714 28.6807C25.6187 28.7656 25.5003 28.8074 25.3821 28.8074C25.2454 28.8074 25.1093 28.7514 25.0111 28.6416L19.0297 21.9623C18.9414 21.8638 18.8959 21.7341 18.9036 21.6018C18.9112 21.4702 18.9713 21.3461 19.0702 21.2586L19.6592 20.7366L17.9435 18.7807C16.0575 20.3052 13.7422 21.1233 11.3209 21.1233C11.1062 21.1233 10.8902 21.1166 10.6741 21.1037C7.8563 20.9346 5.27278 19.6794 3.39943 17.5689C1.52608 15.4584 0.587917 12.7457 0.756832 9.92954ZM25.421 27.6076L26.5556 26.5928L21.2445 20.662L20.1049 21.6718L25.421 27.6076ZM4.14445 16.909C5.84125 18.8208 8.18152 19.9576 10.7339 20.1105C13.2859 20.2677 15.7456 19.4137 17.6588 17.7185C21.6079 14.2181 21.9713 8.15965 18.4685 4.21329C16.7717 2.30146 14.4314 1.16464 11.8791 1.01176C11.6833 0.999822 11.4882 0.994184 11.2934 0.994184C8.95243 0.994184 6.72035 1.83851 4.95386 3.40412C3.04069 5.09973 1.90308 7.43836 1.75009 9.9889C1.59743 12.5398 2.44799 14.9975 4.14445 16.909Z" fill="white"/>
-                                    </svg>
-                                </button>
-                    </form>
-                </div>
-                <div class="service_menu">
                     <ul class="service_list">
                         <li class="service_icon">
                             <a href="#" class="profile">
@@ -191,810 +53,651 @@
                             </a>
                         </li>
                         <li class="service_icon">
-                            <a href="#" class="hold">
-                                <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag 2.svg" alt="Иконка отложенное">
-                                <span class="icon_text">Отложенное</span>
-                            </a>
-                        </li>
-                        <li class="service_icon">
                             <a href="#" class="basket">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_3st_bag 3.svg" alt="Иконка корзины">
                                 <span class="icon_text">Корзина</span>
                             </a>
                         </li>
-                        <li class="service_icon">
-                            <a href="#" class="help">
-                                <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question 2.svg" alt="Иконка помощь">
-                                <span class="icon_text">Помощь</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="help_container">
+                <form class="search_form">
+                    <label class="search_group">
+                    <input class="search_input" placeholder="Автор, книга, серия, раздел, тег" type="search">
+                </label>
+                    <button class="search_button" type="submit">
+                     <svg class="loop" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.09516 4.71141C7.66185 3.31062 9.68317 2.60326 11.7778 2.71966C13.8761 2.83606 15.8036 3.76196 17.205 5.32658C20.0981 8.55729 19.8216 13.538 16.5887 16.4291C15.0894 17.7696 13.2148 18.4288 11.3458 18.4288C9.18373 18.4288 7.03033 17.546 5.47858 15.8133C2.58581 12.5832 2.86224 7.60253 6.09516 4.71141ZM6.22094 15.1504C8.74734 17.9722 13.1009 18.2136 15.925 15.6876C18.7491 13.1623 18.9904 8.81198 16.4636 5.99016C15.2394 4.6232 13.5556 3.81436 11.7231 3.71288C11.5927 3.70592 11.4632 3.70227 11.3338 3.70227C9.64169 3.70227 8.03021 4.31611 6.7592 5.4526C3.93512 7.97827 3.69387 12.3285 6.22094 15.1504Z" fill="white"/>
+                        <path d="M15.5796 6.76609C15.7631 6.97104 15.7455 7.28542 15.5408 7.46848C15.4455 7.55338 15.327 7.59516 15.2089 7.59516C15.0722 7.59516 14.9361 7.53945 14.8379 7.42935C13.1042 5.49364 10.1188 5.32849 8.18173 7.06025C7.97697 7.24364 7.6627 7.22606 7.47885 7.02145C7.29566 6.8165 7.31325 6.50212 7.51801 6.31906C9.86427 4.22119 13.4806 4.42215 15.5796 6.76609Z" fill="white"/>
+                        <path d="M0.756832 9.92954C0.925749 7.11336 2.18184 4.53198 4.29379 2.65995C6.40574 0.787912 9.11836 -0.147276 11.9392 0.0188695C14.757 0.187668 17.3405 1.44288 19.2135 3.55335C22.9685 7.78391 22.6984 14.2125 18.6875 18.1194L20.4042 20.0767L20.9548 19.5888C21.1602 19.4064 21.4735 19.425 21.656 19.6293L27.6295 26.3C27.7178 26.3981 27.7629 26.5275 27.7556 26.6591C27.7483 26.7908 27.6889 26.9145 27.5906 27.0024L25.714 28.6807C25.6187 28.7656 25.5003 28.8074 25.3821 28.8074C25.2454 28.8074 25.1093 28.7514 25.0111 28.6416L19.0297 21.9623C18.9414 21.8638 18.8959 21.7341 18.9036 21.6018C18.9112 21.4702 18.9713 21.3461 19.0702 21.2586L19.6592 20.7366L17.9435 18.7807C16.0575 20.3052 13.7422 21.1233 11.3209 21.1233C11.1062 21.1233 10.8902 21.1166 10.6741 21.1037C7.8563 20.9346 5.27278 19.6794 3.39943 17.5689C1.52608 15.4584 0.587917 12.7457 0.756832 9.92954ZM25.421 27.6076L26.5556 26.5928L21.2445 20.662L20.1049 21.6718L25.421 27.6076ZM4.14445 16.909C5.84125 18.8208 8.18152 19.9576 10.7339 20.1105C13.2859 20.2677 15.7456 19.4137 17.6588 17.7185C21.6079 14.2181 21.9713 8.15965 18.4685 4.21329C16.7717 2.30146 14.4314 1.16464 11.8791 1.01176C11.6833 0.999822 11.4882 0.994184 11.2934 0.994184C8.95243 0.994184 6.72035 1.83851 4.95386 3.40412C3.04069 5.09973 1.90308 7.43836 1.75009 9.9889C1.59743 12.5398 2.44799 14.9975 4.14445 16.909Z" fill="white"/>
+                    </svg>
+                </button>
+                </form>
+                <ul class="service_list">
+                    <li class="service_icon">
+                        <a href="#" class="hold">
+                            <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue_navig.svg" alt="Иконка отложенное">
+                            <span class="icon_text">Отложенное</span>
+                        </a>
+                    </li>
+                    <li class="service_icon">
+                        <a href="#" class="help">
+                            <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question_blue.svg" alt="Иконка помощь">
+                            <span class="icon_text">Помощьь</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <!-- HEADER FOR DESKTOP -->
+        <header class="desktop_versia">
+            <div class="menu_sections">
+                <nav class="navigator_sections">
+                    <ul class="section_items_list">
+                        <li class="section_item">
+                            <a href="#" class="section_link">Об издательстве</a>
+                        </li>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Каталог</a>
+                        </li>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Новости</a>
+                        </li>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Астрологический портал</a>
+                        </li>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Авторам</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <ul class="contacts_list">
+                        <li class="contact_icon number">
+                            <a href="tel:74956247124" class="telephone_number">
+                                <span>+7(495)-624-71-24</span>
+                            </a>
+                        </li>
+                        <li class="contact_icon">
+                            <a href="#" class="telephone_icon">
+                                <img class="item_icon" src="img/icons/Tilda_Icons_2web_phone 1.svg" alt="Иконка телефона">
+                                <span class="icon_text">телефон</span>
+                            </a>
+                        </li>
+                        <li class="contact_icon">
+                            <a href="#" class="location_icon">
+                                <img class="item_icon" src="img/icons/Tilda_Icons_13ph_location 1.svg" alt="Иконка локации">
+                                <span class="icon_text">Локация</span>
+                            </a>
+                        </li>
+                        <li class="contact_icon">
+                            <a href="#" class="location_icon">
+                                <img class="item_icon" src="img/icons/Tilda_Icons_1ed_mail 2.svg" alt="Иконка почты">
+                                <span class="icon_text">Почта</span>
+                            </a>
+                        </li>
+                        <li class="contact_icon">
+                            <a href="#" class="social_link facebook_up">
+                                <img class="item_icon" src="img/icons/Tilda_Icons_26sn_facebook 2.svg" alt="Иконка Facebook">
+                                <span class="icon_text">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="contact_icon">
+                            <a href="#" class="social_link vkontakte_up">
+                                <img class="item_icon" src="img/icons/Tilda_Icons_26sn_vkontakte 2.svg" alt="Иконка Вконтакте">
+                                <span class="icon_text">Вконтакте</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="menu_categories">
-            <nav class="navigator_sections">
-                <ul class="section_items_list">
-                    <li class="section_item">
-                        <a href="#" class="section_link">Новинки</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Бестселлеры</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Скоро</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Рекомендуем</a>
-                    </li>
-                    <li class="section_item">
-                        <a href="#" class="section_link">Акции и распродажи</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- MAIN -->
-    <main class="main_page">
-        <!-- BANNER BLOCK -->
-        <section class="upper_banner">
-            <div class="title_block upper">
-                <a class="name_section" href="#">
-                    <h3 class="name_block">Новинки “Мир Урании”
-                    </h3>
-                </a>
-            </div>
-            <div class="banner_big">
-                <div class="banner_container">
-                    <div class="book_img">
-                        <img class="photo-img" src="img/books_img/Book.jpg" alt="Обложка книги Галины Волжиной 'Природа Черной Луны'">
+            <div class="caption">
+                <div class="caption_container">
+                    <div class="brend_atributs">
+                        <div class="logo">
+                            <a class="link_store" href="#">logo</a>
+                        </div>
+                        <div class="store_name">
+                            <h1 class="company_name">
+                                "Мир Урании"
+                            </h1>
+                            <p class="internet_store">Интернет-магазин издательства</p>
+                        </div>
                     </div>
-                    <div class="banner_content">
-                        <div class="book_title">"Природа Черной Луны"</div>
-                        <p class="banner_text">Новое издание известного российского астролога</p>
-                        <p class="author_banner">Галины Николаевны Волжиной.</p>
+                    <div class="search_container">
+                        <form class="search_form">
+                            <label class="search_group">
+                                    <input class="search_input" placeholder="Автор, книга, серия, раздел, тег" type="search">
+                                </label>
+                            <button class="search_button" type="submit">
+                                     <svg class="loop" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.09516 4.71141C7.66185 3.31062 9.68317 2.60326 11.7778 2.71966C13.8761 2.83606 15.8036 3.76196 17.205 5.32658C20.0981 8.55729 19.8216 13.538 16.5887 16.4291C15.0894 17.7696 13.2148 18.4288 11.3458 18.4288C9.18373 18.4288 7.03033 17.546 5.47858 15.8133C2.58581 12.5832 2.86224 7.60253 6.09516 4.71141ZM6.22094 15.1504C8.74734 17.9722 13.1009 18.2136 15.925 15.6876C18.7491 13.1623 18.9904 8.81198 16.4636 5.99016C15.2394 4.6232 13.5556 3.81436 11.7231 3.71288C11.5927 3.70592 11.4632 3.70227 11.3338 3.70227C9.64169 3.70227 8.03021 4.31611 6.7592 5.4526C3.93512 7.97827 3.69387 12.3285 6.22094 15.1504Z" fill="white"/>
+                                        <path d="M15.5796 6.76609C15.7631 6.97104 15.7455 7.28542 15.5408 7.46848C15.4455 7.55338 15.327 7.59516 15.2089 7.59516C15.0722 7.59516 14.9361 7.53945 14.8379 7.42935C13.1042 5.49364 10.1188 5.32849 8.18173 7.06025C7.97697 7.24364 7.6627 7.22606 7.47885 7.02145C7.29566 6.8165 7.31325 6.50212 7.51801 6.31906C9.86427 4.22119 13.4806 4.42215 15.5796 6.76609Z" fill="white"/>
+                                        <path d="M0.756832 9.92954C0.925749 7.11336 2.18184 4.53198 4.29379 2.65995C6.40574 0.787912 9.11836 -0.147276 11.9392 0.0188695C14.757 0.187668 17.3405 1.44288 19.2135 3.55335C22.9685 7.78391 22.6984 14.2125 18.6875 18.1194L20.4042 20.0767L20.9548 19.5888C21.1602 19.4064 21.4735 19.425 21.656 19.6293L27.6295 26.3C27.7178 26.3981 27.7629 26.5275 27.7556 26.6591C27.7483 26.7908 27.6889 26.9145 27.5906 27.0024L25.714 28.6807C25.6187 28.7656 25.5003 28.8074 25.3821 28.8074C25.2454 28.8074 25.1093 28.7514 25.0111 28.6416L19.0297 21.9623C18.9414 21.8638 18.8959 21.7341 18.9036 21.6018C18.9112 21.4702 18.9713 21.3461 19.0702 21.2586L19.6592 20.7366L17.9435 18.7807C16.0575 20.3052 13.7422 21.1233 11.3209 21.1233C11.1062 21.1233 10.8902 21.1166 10.6741 21.1037C7.8563 20.9346 5.27278 19.6794 3.39943 17.5689C1.52608 15.4584 0.587917 12.7457 0.756832 9.92954ZM25.421 27.6076L26.5556 26.5928L21.2445 20.662L20.1049 21.6718L25.421 27.6076ZM4.14445 16.909C5.84125 18.8208 8.18152 19.9576 10.7339 20.1105C13.2859 20.2677 15.7456 19.4137 17.6588 17.7185C21.6079 14.2181 21.9713 8.15965 18.4685 4.21329C16.7717 2.30146 14.4314 1.16464 11.8791 1.01176C11.6833 0.999822 11.4882 0.994184 11.2934 0.994184C8.95243 0.994184 6.72035 1.83851 4.95386 3.40412C3.04069 5.09973 1.90308 7.43836 1.75009 9.9889C1.59743 12.5398 2.44799 14.9975 4.14445 16.909Z" fill="white"/>
+                                    </svg>
+                                </button>
+                        </form>
+                    </div>
+                    <div class="service_menu">
+                        <ul class="service_list">
+                            <li class="service_icon">
+                                <a href="#" class="profile">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_3st_man 2.svg" alt="Иконка юзера">
+                                    <span class="icon_text">Профиль</span>
+                                </a>
+                            </li>
+                            <li class="service_icon">
+                                <a href="#" class="hold">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag 2.svg" alt="Иконка отложенное">
+                                    <span class="icon_text">Отложенное</span>
+                                </a>
+                            </li>
+                            <li class="service_icon">
+                                <a href="#" class="basket">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_3st_bag 3.svg" alt="Иконка корзины">
+                                    <span class="icon_text">Корзина</span>
+                                </a>
+                            </li>
+                            <li class="service_icon">
+                                <a href="#" class="help">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question 2.svg" alt="Иконка помощь">
+                                    <span class="icon_text">Помощь</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="slick_dots">
-                    <ul class="list_dots">
-                        <li class="item_slick">
-                            <button class="dot"></button>
+            </div>
+            <div class="menu_categories">
+                <nav class="navigator_sections">
+                    <ul class="section_items_list">
+                        <li class="section_item">
+                            <a href="#" class="section_link">Новинки</a>
                         </li>
-                        <li class="item_slick">
-                            <button class="dot"></button>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Бестселлеры</a>
                         </li>
-                        <li class="item_slick">
-                            <button class="dot"></button>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Скоро</a>
                         </li>
-                        <li class="item_slick">
-                            <button class="dot"></button>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Рекомендуем</a>
                         </li>
-                        <li class="item_slick">
-                            <button class="dot"></button>
-                        </li>
-                        <li class="item_slick">
-                            <button class="dot"></button>
+                        <li class="section_item">
+                            <a href="#" class="section_link">Акции и распродажи</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-            <div class="banner_small first_desktop">
-                <div class="content_data">
-                    <p class="data">май – июнь 2020</p>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main_page">
+            <!-- BANNER BLOCK -->
+            <section class="upper_banner">
+                <div class="title_block upper">
+                    <a class="name_section" href="#">
+                        <h3 class="name_block">Новинки “Мир Урании”
+                        </h3>
+                    </a>
                 </div>
-                <div class="title_course">
-                    <div class="content_thema">
+                <div class="banner_big">
+                    <div class="banner_container">
+                        <div class="book_img">
+                            <img class="photo-img" src="img/books_img/Big-banner.jpg" alt="Обложка книги Галины Волжиной 'Природа Черной Луны'">
+                        </div>
+                        <div class="banner_content">
+                            <div class="book_title">«Природа Черной Луны»</div>
+                            <p class="banner_text">Новое издание известного российского астролога</p>
+                            <p class="author_banner">Галины Николаевны Волжиной.</p>
+                        </div>
+                    </div>
+                    <div class="slick_dots">
+                        <ul class="list_dots">
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                            <li class="item_slick">
+                                <button class="dot"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small">
+                    <div class="banner_small first_desktop">
+                        <p class="data">май – июнь 2020</p>
                         <p class="thema">Начала практической астрологии</p>
+                        <div class="title_course">
+                            <div class="content_author">
+                                <a href="#" class="author_link_banner">
+                                    <p class="name_author_course">Константин Дараган</p>
+                                </a>
+                            </div>
+                            <p class="course">1-й курс - 6 занятий</p>
+                        </div>
                     </div>
-                    <div class="content_author">
-                        <a href="#" class="author_link_banner">
-                            <p class="name_author_course">Константин Дараган</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="content_course">
-                    <p class="course">1-й курс - 6 занятий</p>
-                </div>
-            </div>
-            </div>
-            <div class="banner_small second_desktop">
-                <div class="banner_content_small">
-                    <p class="data">лето - осень 2020</p>
-                    <p class="thema">Практическая астрология</p>
-                    <p class="author">Константин Дараган</p>
-                    <p class="course">2-й курс - 7 занятий</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- BOOKS BLOCK 1 -->
-        <section class="book_blocks upper">
-
-            <!--New books -->
-            <div class="book_block new">
-                <div class="title_block">
-                    <a class="section" href="#">
-                        <h3 class="name_block">Новинки</h3>
-                    </a>
-                </div>
-                <div class="content_block new">
-                    <div class="slide_arrow"></div>
-                    <div class="slider_container">
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 1">
-                                        <img class="picture_book" src="img/books_img/Book1.jpg" alt="Книга Астрология в выборе профессий. Сергей Вронский">
-                                    </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Сергей Вронский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        Астрология в выборе профессий.
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">700 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
+                    <div class="banner_small second_desktop">
+                        <p class="data">лето - осень 2020</p>
+                        <p class="thema">Практическая астрология</p>
+                        <div class="title_course">
+                            <div class="content_author">
+                                <a href="#" class="author_link_banner">
+                                    <p class="name_author_course">Константин Дараган</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 2">
-                                        <img class="picture_book" src="img/books_img/Book2.jpg" alt="Книга Классическая астрология о браке и совместимости. Сергей Вронский">
-                                    </a>
-                                </div>
-                                <div class="elements_card ">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Сергей Вронский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                Классическая астрология о браке и совместимости.
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">460 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 3">
-                                        <img class="picture_book" src="img/books_img/Book3.jpg" alt="Книга Свод трактовок градусов Зодика. Сергей Вронский">
-                                    </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Сергей Вронский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Свод трактовок градусов Зодика.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">390 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 4"><img class="picture_book" src="img/books_img/Book4.jpg" alt="Книга ассическая астрология. Сергей Вронский"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Сергей Вронский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Классическая астрология.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">760 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                                <div class="book_price">
-                                    <span class="price_rouble">366 р.</span>
-                                    <button class="buy">Скачать</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 5"> <img class="picture_book" src="img/books_img/Book5.jpg" alt="Книга ассическая астрология. Том 1. Сергей Вронский"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                        Сергей Вронский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Классическая астрология. Том 1</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">789 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
+                            <p class="course">2-й курс - 7 занятий</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Bestsellers -->
-            <div class="book_block bestsellers">
-                <div class="title_block">
-                    <a class="section" href="#">
-                        <h3 class="name_block">Бестселлеры</h3>
-                    </a>
-                </div>
-                <div class="content_block bestsellers">
-                    <div class="slide_arrow"></div>
-                    <div class="slider_container">
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 6"> <img class="picture_book" src="img/books_img/Book6.jpg" alt="Книга  Астрология от А до Я. Джордж Ллевелин"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Джордж Ллевелин
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Астрология от А до Я.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">789 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 7"><img class="picture_book" src="img/books_img/Book7.jpg" alt="Книга Астрология любви и брака. Константин Дараган, 
-                                    Яна Новикова"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Константин Дараган, Яна Новикова
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Астрология любви и брака</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">560 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                                <div class="book_price">
-                                    <span class="price_rouble">366 р.</span>
-                                    <button class="buy">Скачать</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
+            <!-- BOOKS BLOCK 1 -->
+            <section class="book_blocks upper">
 
-
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 8"><img class="picture_book" src="img/books_img/Book8.jpg" alt="Книга Астрология трансформации личности. Константин Дараган"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                        Константин Дараган
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">Астрология трансформации личности.
-                                        </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">760 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 9"> <img class="picture_book" src="img/books_img/Book9.jpg" alt="Книга Мастерская традиционного астролога. Джон Фроули"></a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Джон Фроули
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Мастерская традиционного астролога.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">789 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-
-
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class=" book_image">
-                                    <a href="#" class="item_book 10"><img class="picture_book" src="img/books_img/Book10.jpg" alt="Книга Энциклопедия домов гороскопа."> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Феликс Величко
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        Энциклопедия домов гороскопа.
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">670 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NEWS BLOCK -->
-        <section class="publishing_news">
-            <div class="slide_arrow">
-                <div class="arrow_left">
-                    <a href="#" class="icon_link">
-                        <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
-                    </a>
-                </div>
-                <div class="arrow_right">
-                    <a href="#" class="icon_link">
-                        <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
-                    </a>
-                </div>
-            </div>
-            <div class="publishing_news_container">
-                <div class="block_new">
-                    <a href="#" class="title_new">
-                        <h2 class="name_new">Новости<br>Астрологического<br>портала "Урания"</h2>
-                    </a>
-                </div>
-                <div class="block_new second_new">
-                    <a href="#" class="title_new">
-                        <span class="name_new look">Смотрите фильм</span>
-                    </a>
-                    <p class="person">Сергей Вронский</p>
-                    <p class="who_is">– астролог<br>и предсказатель</p>
-
-                </div>
-                <div class="block_new third_new">
-                    <a href="#" class="title_new">
-                        <h2 class="name_new">Расписание лектория “Урания”</h2>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- BOOKS BLOCK 2 -->
-        <section class="book_blocks down">
-
-            <!-- Planned books -->
-            <div class="book_block info">
-                <div class="book_block planned_books">
+                <!--New books -->
+                <div class="book_block new">
                     <div class="title_block">
                         <a class="section" href="#">
-                            <h3 class="name_block">Готовятся к изданию</h3>
+                            <h3 class="name_block">Новинки</h3>
                         </a>
                     </div>
                     <div class="content_block new">
+                        <div class="slide_arrow">
+                            <div class="arrow_left">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
+                                </a>
+                            </div>
+                            <div class="arrow_right">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                                </a>
+                            </div>
+                        </div>
+
                         <div class="slider_container">
                             <div class="book_card">
                                 <div class="content_book_card">
                                     <div class="book_image">
-                                        <a href="#" class="item_book 11"><img class="picture_book" src="img/books_img/Book11.jpg" alt="Книга Музыка звезд. Скрытые факторы гороскопа. Алексей Агафонов"></a>
+                                        <a href="#" class="item_book 1">
+                                            <img class="picture_book" src="img/books_img/Book1.jpg" alt="Книга Астрология в выборе профессий. Сергей Вронский">
+                                        </a>
                                     </div>
                                     <div class="elements_card">
                                         <div class="author">
                                             <a class="name_author" href="#">
-                                                Алексей Агафонов
-                                            </a>
-                                        </div>
-                                        <a class="name_book" href="#">
-                                            <p>Музыка звезд. Скрытые факторы гороскопа.</p>
+                                            Сергей Вронский
                                         </a>
+                                        </div>
+                                        <div class="name_book"> <a class="link_name_book" href="#">
+                                        Астрология в выборе профессий.
+                                    </a></div>
+
                                     </div>
                                 </div>
-                                <div class="request">
-                                    <button class="button_request">Оставить заявку</button>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">700 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 2">
+                                            <img class="picture_book" src="img/books_img/Book2.jpg" alt="Книга Классическая астрология о браке и совместимости. Сергей Вронский">
+                                        </a>
+                                    </div>
+                                    <div class="elements_card ">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Сергей Вронский
+                                        </a>
+                                        </div>
+                                        <div class="name_book"> <a class="link_name_book" href="#">
+                                Классическая астрология о браке и совместимости.
+                                    </a></div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">460 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 3">
+                                            <img class="picture_book" src="img/books_img/Book3.jpg" alt="Книга Свод трактовок градусов Зодика. Сергей Вронский">
+                                        </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Сергей Вронский
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Свод трактовок градусов Зодика.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">390 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 4"><img class="picture_book" src="img/books_img/Book4.jpg" alt="Книга ассическая астрология. Сергей Вронский"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Сергей Вронский
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Классическая астрология.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">760 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                    <div class="book_price">
+                                        <span class="price_rouble">366 р.</span>
+                                        <button class="buy">Скачать</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
                                 </div>
 
                             </div>
                             <div class="book_card">
                                 <div class="content_book_card">
                                     <div class="book_image">
-                                        <a href="#" class="item_book 12"><img class="picture_book" src="img/books_img/Book12.jpg" alt="Книга Астрологический букварь. Донна Миклер"> </a>
+                                        <a href="#" class="item_book 5"> <img class="picture_book" src="img/books_img/Book5.jpg" alt="Книга ассическая астрология. Том 1. Сергей Вронский"> </a>
                                     </div>
                                     <div class="elements_card">
                                         <div class="author">
                                             <a class="name_author" href="#">
-                                                Донна Миклер
+                                        Сергей Вронский
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Классическая астрология. Том 1</p>
                                             </a>
                                         </div>
-                                        <a class="name_book" href="#">
-                                            <p>Астрологический букварь.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="request">
-                                    <button class="button_request">Оставить заявку</button>
-                                </div>
 
-                            </div>
-                            <div class="book_card">
-                                <div class="content_book_card">
-                                    <div class="book_image">
-                                        <a href="#" class="item_book 13"><img class="picture_book" src="img/books_img/Book13.jpg" alt="Книга Старинная символика градусов Зодиака. Юлий Фирмак Матери Иоани Ангел"> </a>
-                                    </div>
-                                    <div class="elements_card">
-                                        <div class="author">
-                                            <a class="name_author" href="#">
-                                               Юлий Фирмак Матери Иоани Ангел
-                                            </a>
-                                        </div>
-                                        <a class="name_book" href="#">
-                                            <p>Старинная символика градусов Зодиака.</p>
-                                        </a>
                                     </div>
                                 </div>
-                                <div class="request">
-                                    <button class="button_request">Оставить заявку</button>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">789 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
                                 </div>
-
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Block information from company -->
-                <div class="info_container">
-                    <div class="block_info first">
 
-                        <a href="#" class="about_publishing">
-                            <h2 class="about">Об издательстве, история, планы развития...</h2>
+                <!-- Bestsellers -->
+                <div class="book_block bestsellers">
+                    <div class="title_block">
+                        <a class="section" href="#">
+                            <h3 class="name_block">Бестселлеры</h3>
                         </a>
                     </div>
-                    <div class="block_info second">
-                        <a href="#" class="subscription">Подписаться на новости</a>
+                    <div class="content_block bestsellers">
+                        <div class="slide_arrow">
+                            <div class="arrow_left">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
+                                </a>
+                            </div>
+                            <div class="arrow_right">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slider_container">
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 6"> <img class="picture_book" src="img/books_img/Book6.jpg" alt="Книга  Астрология от А до Я. Джордж Ллевелин"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Джордж Ллевелин
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Астрология от А до Я.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">789 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 7"><img class="picture_book" src="img/books_img/Book7.jpg" alt="Книга Астрология любви и брака. Константин Дараган, 
+                                    Яна Новикова"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Константин Дараган, Яна Новикова
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Астрология любви и брака</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">560 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                    <div class="book_price">
+                                        <span class="price_rouble">366 р.</span>
+                                        <button class="buy">Скачать</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 8"><img class="picture_book" src="img/books_img/Book8.jpg" alt="Книга Астрология трансформации личности. Константин Дараган"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                        Константин Дараган
+                                        </a>
+                                        </div>
+                                        <div class="name_book"> <a class="link_name_book" href="#">Астрология трансформации личности.
+                                        </a></div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">760 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 9"> <img class="picture_book" src="img/books_img/Book9.jpg" alt="Книга Мастерская традиционного астролога. Джон Фроули"></a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Джон Фроули
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Мастерская традиционного астролога.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">789 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class=" book_image">
+                                        <a href="#" class="item_book 10"><img class="picture_book" src="img/books_img/Book10.jpg" alt="Книга Энциклопедия домов гороскопа."> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Феликс Величко
+                                        </a>
+                                        </div>
+                                        <div class="name_book"> <a class="link_name_book" href="#">
+                                        Энциклопедия домов гороскопа.
+                                    </a></div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">670 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-            </div>
+            </section>
 
-            <!-- BOOKS BLOCK 3-->
-            <!-- Reccomend-->
-            <div class="book_block reccomend">
-                <div class="title_block">
-                    <a class="section" href="#">
-                        <h3 class="name_block">Рекомендуем</h3>
-                    </a>
-                </div>
-                <div class="content_block reccomend">
-                    <div class="slide_arrow"></div>
-                    <div class="slider_container">
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 14"><img class="picture_book" src="img/books_img/Book14.jpg" alt="Книга Энциклопедия мантр. Сергей Неополитанский"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Сергей Неополитанский
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Энциклопедия мантр.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">789 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 15"><img class="picture_book" src="img/books_img/Book15.jpg" alt="Книга Узлы планет в натальной и мунданной астрологии. Галина Волжина"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Галина Волжина
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Узлы планет в натальной и мунданной астр..</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">560 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                                <div class="book_price">
-                                    <span class="price_rouble">366 р.</span>
-                                    <button class="buy">Скачать</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 16"><img class="picture_book" src="img/books_img/Book16.jpg" alt="Книга Астрология землетрясений. Уильям Лилли, Улиям Рэмеи"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                        Уильям Лилли, Улиям Рэмеи
-                                       </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>стрология землетрясений.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">760 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 17"><img class="picture_book" src="img/books_img/Book17.jpg" alt="Книга Природа Черной Луны. Галина Волжина"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Галина Волжина
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Природа Черной Луны.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">789 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="book_card">
-                            <div class="content_book_card">
-                                <div class="book_image">
-                                    <a href="#" class="item_book 18"><img class="picture_book" src="img/books_img/Book18.jpg" alt="Книга Новый справочник астролога. Координаты городов и врем... Анатолий Зайцев, Денис Куталёв, Владимир Потапов"> </a>
-                                </div>
-                                <div class="elements_card">
-                                    <div class="author">
-                                        <a class="name_author" href="#">
-                                            Анатолий Зайцев, Денис Куталёв, Владимир Потапов
-                                        </a>
-                                    </div>
-                                    <a class="name_book" href="#">
-                                        <p>Новый справочник астролога.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="price_block">
-                                <div class="book_price">
-                                    <span class="price_rouble">670 р.</span>
-                                    <button class="buy">Купить</button>
-                                </div>
-                            </div>
-                            <div class="flag_icon">
-                                <a href="#" class="icon_link">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                    <span class="icon_text">Отложить</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ASTROLOGYCAL PROGRAMMS -->
-        <section class="astroprogramms">
-            <div class="title_block">
-                <a class="section" href="#">
-                    <h3 class="name_block">Астрологические программы</h3>
-                </a>
-            </div>
-            <div class="block_astroprg">
-
-                <div class="slide_arrow"></div>
-                <div class="prg_card">
-                    <img class="prg_picture" src="img/Prog_img/Prg1.png" alt="Обложка астрологичекой программы ZET 9">
-                    <span class="name_prg">ZET 9</span>
-                </div>
-                <div class="prg_card">
-                    <img class="prg_picture" src="img/Prog_img/Prg1.png" alt="Обложка астрологичекой программы ZET Geo">
-                    <div class="name_prg">ZET Geo</div>
-                </div>
-                <div class="prg_card">
-                    <img class="prg_picture" src="img/Prog_img/Prg3.png" alt="Обложка астрологичекой программы Almagest">
-                    <span class="name_prg">Almagest</span>
-                </div>
-                <div class="prg_card">
-                    <img class="prg_picture" src="img/Prog_img/Prg4.png" alt="Обложка астрологичекой программы Sotis">
-                    <span class="name_prg">Sotis</span>
-                </div>
-                <div class="prg_card">
-                    <img class="prg_picture" src="img/Prog_img/Prg5.png" alt="Обложка астрологичекой программы Уранус">
-                    <span class="name_prg">Уранус</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- URANIA-WORLD SERVICE -->
-
-        <!-- Mobile versia service -->
-        <section class="service_block_mobile">
-
-            <div class="name_block">
-                <a href="#" class="service">
-                    <h3 class="title_service">Обучение</h3>
-                </a>
-            </div>
-            <div class="service_container">
+            <!-- NEWS BLOCK -->
+            <section class="publishing_news">
                 <div class="slide_arrow">
                     <div class="arrow_left">
                         <a href="#" class="icon_link">
@@ -1007,130 +710,760 @@
                         </a>
                     </div>
                 </div>
-                <div class="banner_mobile">
-                    <div class="banner_content_mobile">
-                        <div class="content_data">
-                            <p class="data">май – июнь 2020</p>
+                <div class="publishing_news_container">
+                    <div class="block_new">
+                        <a href="#" class="title_new">
+                            <h2 class="name_new">Новости<br>Астрологического<br>портала "Урания"</h2>
+                        </a>
+                    </div>
+                    <div class="block_new second_new">
+                        <a href="#" class="title_new">
+                            <span class="name_new look">Смотрите фильм</span>
+                        </a>
+                        <p class="person">Сергей Вронский</p>
+                        <p class="who_is">– астролог<br>и предсказатель</p>
+
+                    </div>
+                    <div class="block_new third_new">
+                        <a href="#" class="title_new">
+                            <h2 class="name_new">Расписание<br>лектория “Урания”</h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOOKS BLOCK 2 -->
+            <section class="book_blocks down">
+
+                <!-- Planned books -->
+                <div class="book_block info">
+                    <div class="book_block planned_books">
+                        <div class="title_block">
+                            <a class="section" href="#">
+                                <h3 class="name_block">Готовятся к изданию</h3>
+                            </a>
                         </div>
-                        <div class="title_course">
-                            <div class="content_thema">
-                                <p class="thema">Начала практической астрологии</p>
+                        <div class="content_block new">
+                            <div class="slider_container">
+                                <div class="book_card">
+                                    <div class="content_book_card">
+                                        <div class="book_image">
+                                            <a href="#" class="item_book 11"><img class="picture_book" src="img/books_img/Book11.jpg" alt="Книга Музыка звезд. Скрытые факторы гороскопа. Алексей Агафонов"></a>
+                                        </div>
+                                        <div class="elements_card">
+                                            <div class="author">
+                                                <a class="name_author" href="#">
+                                                Алексей Агафонов
+                                            </a>
+                                            </div>
+                                            <div class="name_book">
+                                                <a class="link_name_book" href="#">
+                                                    <p>Музыка звезд. Скрытые факторы гороскопа.</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="request">
+                                        <button class="button_request">Оставить заявку</button>
+                                    </div>
+
+                                </div>
+                                <div class="book_card">
+                                    <div class="content_book_card">
+                                        <div class="book_image">
+                                            <a href="#" class="item_book 12"><img class="picture_book" src="img/books_img/Book12.jpg" alt="Книга Астрологический букварь. Донна Миклер"> </a>
+                                        </div>
+                                        <div class="elements_card">
+                                            <div class="author">
+                                                <a class="name_author" href="#">
+                                                Донна Миклер
+                                            </a>
+                                            </div>
+                                            <div class="name_book">
+                                                <a class="link_name_book" href="#">
+                                                    <p>Астрологический букварь.</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="request">
+                                        <button class="button_request">Оставить заявку</button>
+                                    </div>
+
+                                </div>
+                                <div class="book_card">
+                                    <div class="content_book_card">
+                                        <div class="book_image">
+                                            <a href="#" class="item_book 13"><img class="picture_book" src="img/books_img/Book13.jpg" alt="Книга Старинная символика градусов Зодиака. Юлий Фирмак Матери Иоани Ангел"> </a>
+                                        </div>
+                                        <div class="elements_card">
+                                            <div class="author">
+                                                <a class="name_author" href="#">
+                                               Юлий Фирмак Матери Иоани Ангел
+                                            </a>
+                                            </div>
+                                            <div class="name_book">
+                                                <a class="link_name_book" href="#">
+                                                    <p>Старинная символика градусов Зодиака.</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="request">
+                                        <button class="button_request">Оставить заявку</button>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="content_author">
-                                <a href="#" class="author_link_banner">
-                                    <p class="name_author_course">Константин Дараган</p>
+                        </div>
+                    </div>
+                    <!-- Block information from company -->
+                    <div class="info_container">
+                        <div class="block_info first">
+
+                            <a href="#" class="about_publishing">
+                                <h2 class="about">Об издательстве, история, планы развития...</h2>
+                            </a>
+                        </div>
+                        <div class="block_info second">
+                            <a href="#" class="subscription">Подписаться на новости</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BOOKS BLOCK 3-->
+                <!-- Reccomend-->
+                <div class="book_block reccomend">
+                    <div class="title_block">
+                        <a class="section" href="#">
+                            <h3 class="name_block">Рекомендуем</h3>
+                        </a>
+                    </div>
+                    <div class="content_block reccomend">
+
+                        <div class="slide_arrow">
+                            <div class="arrow_left">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
+                                </a>
+                            </div>
+                            <div class="arrow_right">
+                                <a href="#" class="icon_link">
+                                    <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
                                 </a>
                             </div>
                         </div>
-                        <div class="content_course">
-                            <p class="course">1-й курс - 6 занятий</p>
+
+                        <div class="slider_container">
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 14"><img class="picture_book" src="img/books_img/Book14.jpg" alt="Книга Энциклопедия мантр. Сергей Неополитанский"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Сергей Неополитанский
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Энциклопедия мантр.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">789 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 15"><img class="picture_book" src="img/books_img/Book15.jpg" alt="Книга Узлы планет в натальной и мунданной астрологии. Галина Волжина"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Галина Волжина
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Узлы планет в натальной и мунданной астр..</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">560 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                    <div class="book_price">
+                                        <span class="price_rouble">366 р.</span>
+                                        <button class="buy">Скачать</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 16"><img class="picture_book" src="img/books_img/Book16.jpg" alt="Книга Астрология землетрясений. Уильям Лилли, Улиям Рэмеи"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                        Уильям Лилли, Улиям Рэмеи
+                                       </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Астрология землетрясений.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">760 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 17"><img class="picture_book" src="img/books_img/Book17.jpg" alt="Книга Природа Черной Луны. Галина Волжина"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Галина Волжина
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Природа Черной Луны.</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">789 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="book_card">
+                                <div class="content_book_card">
+                                    <div class="book_image">
+                                        <a href="#" class="item_book 18"><img class="picture_book" src="img/books_img/Book18.jpg" alt="Книга Новый справочник астролога. Координаты городов и врем... Анатолий Зайцев, Денис Куталёв, Владимир Потапов"> </a>
+                                    </div>
+                                    <div class="elements_card">
+                                        <div class="author">
+                                            <a class="name_author" href="#">
+                                            Анатолий Зайцев,<br>Денис Куталёв,<br>Владимир Потапов
+                                        </a>
+                                        </div>
+                                        <div class="name_book">
+                                            <a class="link_name_book" href="#">
+                                                <p>Новый справочник астролога.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_block">
+                                    <div class="book_price">
+                                        <span class="price_rouble">670 р.</span>
+                                        <button class="buy">Купить</button>
+                                    </div>
+                                </div>
+                                <div class="flag_icon">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
+                                        <span class="icon_text">Отложить</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Desktop versia service -->
-        <section class="servise_block desktop">
-            <div class="service_container">
+            </section>
 
-                <!-- Education-->
-                <div class="item_service">
-                    <div class="title_service">
-                        <a href="#" class="service">
-                            <h2 class="title_service">Обучение</h2>
-                        </a>
+            <!-- ASTROLOGYCAL PROGRAMMS -->
+            <section class="astroprogramms">
+                <div class="title_block">
+                    <a class="section" href="#">
+                        <h3 class="name_block">Астрологические программы</h3>
+                    </a>
+                </div>
+                <div class="block_astroprg">
+                    <div class="slide_arrow">
+                        <div class="arrow_left">
+                            <a href="#" class="icon_link">
+                                <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
+                            </a>
+                        </div>
+                        <div class="arrow_right">
+                            <a href="#" class="icon_link">
+                                <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                            </a>
+                        </div>
                     </div>
-                    <div class="banner_service education">
-                        <div class="banner_text">
-                            <p class="type">Заочный курс</p>
-                            <div class="name_service ">
-                                <a class="link_service" href="#">
+                    <div class="prg_card">
+                        <img class="prg_picture" src="img/Prog_img/Prg1.png" alt="Обложка астрологичекой программы ZET 9">
+                        <span class="name_prg">ZET 9</span>
+                    </div>
+                    <div class="prg_card">
+                        <img class="prg_picture" src="img/Prog_img/Prg1.png" alt="Обложка астрологичекой программы ZET Geo">
+                        <div class="name_prg">ZET Geo</div>
+                    </div>
+                    <div class="prg_card">
+                        <img class="prg_picture" src="img/Prog_img/Prg3.png" alt="Обложка астрологичекой программы Almagest">
+                        <span class="name_prg">Almagest</span>
+                    </div>
+                    <div class="prg_card">
+                        <img class="prg_picture" src="img/Prog_img/Prg4.png" alt="Обложка астрологичекой программы Sotis">
+                        <span class="name_prg">Sotis</span>
+                    </div>
+                    <div class="prg_card">
+                        <img class="prg_picture" src="img/Prog_img/Prg5.png" alt="Обложка астрологичекой программы Уранус">
+                        <span class="name_prg">Уранус</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- URANIA-WORLD SERVICE -->
+
+            <!-- Mobile versia service -->
+            <section class="service_block_mobile">
+
+                <div class="name_block">
+                    <a href="#" class="service">
+                        <h3 class="title_service">Обучение</h3>
+                    </a>
+                </div>
+                <div class="service_container">
+                    <div class="slide_arrow">
+                        <div class="arrow_left">
+                            <a href="#" class="icon_link">
+                                <img class="item_icon" src="img/icons/ArrowLeft.svg" alt="Иконка стрелки">
+                            </a>
+                        </div>
+                        <div class="arrow_right">
+                            <a href="#" class="icon_link">
+                                <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner_mobile">
+                        <div class="banner_content_mobile">
+                            <p class="data">май – июнь 2020</p>
+                            <p class="thema">Начала практической астрологии</p>
+                            <div class="title_course">
+                                <div class="content_author">
+                                    <a href="#" class="author_link_banner">
+                                        <p class="name_author_course">Константин Дараган</p>
+                                    </a>
+                                </div>
+                                <p class="course">1-й курс - 6 занятий</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Desktop versia service -->
+            <section class="servise_block desktop">
+                <div class="service_container">
+
+                    <!-- Education-->
+                    <div class="item_service">
+
+                        <div class="title_service">
+                            <a href="#" class="service">
+                                <h2 class="title_service">Обучение</h2>
+                            </a>
+                        </div>
+                        <div class="banner_service education">
+                            <div class="banner_text">
+                                <p class="type">Заочный курс</p>
+                                <div class="name_service ">
+                                    <a class="link_service" href="#">
                                     “Натальная астрология”
                                 </a>
+                                </div>
+                                <p class="author_service">Алексея Агафонова</p>
                             </div>
-                            <p class="author_service">Алексея Агафонова</p>
+                            <div class="slide_arrow">
+                                <div class="arrow_right">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide_arrow"></div>
-                    </div>
-                </div>
 
-                <!-- Consultation -->
-                <div class="item_service">
-                    <div class="title_service">
-                        <a href="#" class="service">
-                            <h2 class="title_service">Консультации</h2>
-                        </a>
                     </div>
-                    <div class="banner_service consultation">
-                        <div class="banner_text">
-                            <div class="name_service">
-                                <a class="link_service" href="#">
+
+                    <!-- Consultation -->
+                    <div class="item_service">
+
+                        <div class="title_service">
+                            <a href="#" class="service">
+                                <h2 class="title_service">Консультации</h2>
+                            </a>
+                        </div>
+                        <div class="banner_service consultation">
+                            <div class="banner_text">
+                                <div class="name_service">
+                                    <a class="link_service" href="#">
                                      Астрологическая консультация
                                 </a>
+                                </div>
+                                <p class="author_service">Алексея Агафонова</p>
                             </div>
-                            <p class="author_service">Алексея Агафонова</p>
+                            <div class="slide_arrow">
+                                <div class="arrow_right">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide_arrow"></div>
-                    </div>
-                </div>
 
-                <!-- Astroprognosis -->
-                <div class="item_service">
-                    <div class="title_service">
-                        <a href="#" class="service">
-                            <h2 class="title_service">Астрологические прогнозы</h2>
-                        </a>
                     </div>
-                    <div class="banner_service prognos">
-                        <div class="banner_text">
-                            <p class="year">2020</p>
-                            <div class="name_service">
-                                <a class="link_service" href="#">
+
+                    <!-- Astroprognosis -->
+                    <div class="item_service">
+                        <div class="title_service">
+                            <a href="#" class="service">
+                                <h2 class="title_service">Астрологические прогнозы</h2>
+                            </a>
+                        </div>
+                        <div class="banner_service prognos">
+                            <div class="banner_text">
+                                <p class="year">2020</p>
+                                <div class="name_service">
+                                    <a class="link_service" href="#">
                                     Астрологический прогноз
                                 </a>
+                                </div>
+                                <p class="author_service">от Сергея Курапова</p>
                             </div>
-                            <p class="author_service consultation"> от Сергея Курапова</p>
+                            <div class="slide_arrow">
+                                <div class="arrow_right">
+                                    <a href="#" class="icon_link">
+                                        <img class="item_icon" src="img/icons/ArrowRight.svg" alt="Иконка стрелки">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide_arrow"></div>
                     </div>
                 </div>
-            </div>
-            <div class="arrow_up">
-                <a class="page_up" href="#">
-                    <img class="up" src="img/icons/Shape.svg" alt="Стрелка вверх">
-                </a>
-            </div>
-        </section>
+                <div class="arrow_up">
+                    <a class="page_up" href="#">
+                        <img class="up" src="img/icons/Shape.svg" alt="Стрелка вверх">
+                    </a>
+                </div>
+            </section>
 
 
-        <!-- FOR MOBILE VERSION BLOCK -->
-        <section class="subscription_news">
-            <div class="block_info second">
-                <a href="#" class="subscription">Подписаться на новости</a>
-            </div>
-        </section>
-    </main>
+            <!-- FOR MOBILE VERSION BLOCK -->
+            <section class="subscription_news">
+                <div class="block_info second">
+                    <a href="#" class="subscription">Подписаться на новости</a>
+                </div>
+            </section>
+        </main>
 
-    <!--- FOOTER -->
-    <footer class="desktop_footer">
-        <div class="footer_container">
-            <div class="footer_caption">
-                <div class="brend_atributs">
-                    <div class="logo">
-                        <a class="link_logo" href="#">logo</a>
+        <!--- FOOTER -->
+        <footer class="desktop_footer">
+            <div class="footer_container">
+                <div class="footer_caption">
+                    <div class="brend_atributs">
+                        <div class="logo">
+                            <a class="link_logo" href="#">logo</a>
+                        </div>
+                        <div class="store_name">
+                            <h1 class="company_name">
+                                "Мир Урании"
+                            </h1>
+                            <p class="internet_store">Интернет-магазин издательства</p>
+                        </div>
                     </div>
-                    <div class="store_name">
-                        <h1 class="company_name">
-                            "Мир Урании"
-                        </h1>
-                        <p class="internet_store">Интернет-магазин издательства</p>
+                    <div class="subscription_block">
+                        <div class="text_subscription"><a href="#" class="subscription_footer">Подписаться на новости</a></div>
+
+                    </div>
+                    <div class="social_links">
+                        <span class="text_links network">“Мир Урании” в соцсетях</span>
+                        <ul class="social_icons">
+                            <li class="item_icon network">
+                                <a href="#" class="social_link facebook">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_26sn_facebook_foot.svg" alt="Иконка фэйсбук">
+                                    <span class="icon_text">Фэйсбук</span>
+                                </a>
+                            </li>
+                            <li class="item_icon network">
+                                <a href="#" class="social_link vkontakte">
+                                    <img class="item_icon" src="img/icons/Tilda_Icons_26sn_vkontakte_foot.svg" alt="Иконка вконтакте">
+                                    <span class="icon_text">Вконтакте</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="subscription_block">
-                    <a href="#" class="subscription_footer">Подписаться на новости</a>
+                <div class="menu_site">
+                    <div class="box left">
+                        <ul class="rubrics_list">
+                            <li class="rubric_item">
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric"><span class="general_name">ГЛАВНАЯ</span></a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Об издательстве</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Контакты</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Как заказать</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Доставка</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Способы оплаты</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Акции и скидки</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Подарочные сертификаты</a>
+                                </li>
+                            </li>
+                        </ul>
+                        <ul class="rubrics_list">
+                            <li class="rubric_item">
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">ИНТЕРНЕТ-МАГАЗИН</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Каталог</a></li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Каталог авторов</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Новинки</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Бестселлеры</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Готовятся к изданию</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Статьи о книгах и авторах</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Где купить еще?</a>
+                                </li>
+                            </li>
+                        </ul>
+                        <ul class="rubrics_list">
+                            <li class="rubric_item">
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">АСТРОЛОГИЧЕСКИЙ ПОРТАЛ:</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Лекторий “Урания”</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Новости </a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Библиотека</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Обучение</a>
+                                </li>
+
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Прогнозы</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric"></a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box right">
+                        <ul class="rubrics_list">
+                            <li class="rubric_item">
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">СОТРУДНИЧЕСТВО:</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Авторам</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Переводчиками</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Партнерам</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Рекламодателям</a>
+                                </li>
+                                <li class="links_names">
+                                    <a href="#" class="name_rubric">Вакансии</a>
+                                </li>
+                            </li>
+                        </ul>
+                        <div class="payments">
+                            <p class="text_payments">Мы принимаем<br> к оплате карты</p>
+                            <div class="box_pay">
+                                <div class="pay">
+                                    <a href="#" class="picture_paysistem">
+                                        <img class="img_pay" src="img/elements/VisaCard.jpg" alt="Логтип платежной системы Visa">
+                                    </a>
+                                </div>
+                                <div class="pay">
+                                    <a href="#" class="picture_paysistem">
+                                        <img class="img_pay" src="img/elements/MasterCard.jpg" alt="Логтип платежной системы MasterCard">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="copyright">
+                    <img class="img_copyright" src="img/icons/Copyright_wight.svg" alt="">
+                    <span>2008 - 2020, ООО “Мир Урании”</span>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- FOOTER MOBILE VERSIA -->
+        <footer class="mobile_versia footer">
+            <div class="up_part">
+                <div class="footer_container">
+                    <div class="footer_caption">
+                        <div class="brend_atributs">
+                            <div class="logo">
+                                <a class="link_logo" href="#">logo</a>
+                            </div>
+                            <div class="store_name">
+                                <h1 class="company_name">
+                                    "Мир Урании"
+                                </h1>
+                                <p class="internet_store">Интернет-магазин издательства</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="rubrics_list">
+                    <li class="rubric_item">
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Об издательстве</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Контакты</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Как заказать</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Доставка</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Способы оплаты</a>
+                        </li>
+
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Акции и скидки</a>
+                        </li>
+                        <li class="links_names">
+                            <a href="#" class="name_rubric">Подарочные сертификаты</a>
+                        </li>
+                    </li>
+                </ul>
+                <ul class="rubrics_list">
+                    <li class="rubric_item">
+                        <div class="links_names">
+                            <a href="#" class="name_rubric"><span class="general_name">АСТРОЛОГИЧЕСКИЙ ПОРТАЛ:</span></a>
+                        </div>
+                        <div class="links_names">
+                            <a href="#" class="name_rubric">Лекторий “Урания”</a>
+                        </div>
+                        <div class="links_names">
+                            <a href="#" class="name_rubric">Новости </a>
+                        </div>
+                        <div class="links_names">
+                            <a href="#" class="name_rubric">Библиотека</a>
+                        </div>
+                        <div class="links_names"> <a href="#" class="name_rubric">Обучение</a></div>
+
+                        <div class="links_names">
+                            <a href="#" class="name_rubric"></a>
+                        </div>
+
+                        <div class="links_names"><a href="#" class="name_rubric">Прогнозы</a></div>
+                        <div class="links_names">
+                            <a href="#" class="name_rubric"></a>
+                        </div>
+                    </li>
+                </ul>
                 <div class="social_links">
-                    <span class="text_links network">“Мир Урании” в соцсетях</span>
+                    <span class="text_links network">“Мир Урании” в</span>
                     <ul class="social_icons">
                         <li class="item_icon network">
                             <a href="#" class="social_link facebook">
@@ -1146,259 +1479,35 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
-            <div class="menu_site">
-                <div class="box left">
-                    <ul class="rubrics_list">
-                        <li class="rubric_item">
-                            <li class="links_names">
-                                <a href="#" class="name_rubric"><span class="general_name">ГЛАВНАЯ</span></a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Об издательстве</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Контакты</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Как заказать</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Доставка</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Способы оплаты</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Акции и скидки</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Подарочные сертификаты</a>
-                            </li>
-                        </li>
-                    </ul>
-                    <ul class="rubrics_list">
-                        <li class="rubric_item">
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">ИНТЕРНЕТ-МАГАЗИН</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Каталог</a></li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Каталог авторов</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Новинки</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Бестселлеры</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Готовятся к изданию</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Статьи о книгах и авторах</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Где купить еще?</a>
-                            </li>
-                        </li>
-                    </ul>
-                    <ul class="rubrics_list">
-                        <li class="rubric_item">
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">АСТРОЛОГИЧЕСКИЙ ПОРТАЛ:</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Лекторий “Урания”</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Новости </a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Библиотека</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Обучение</a>
-                            </li>
-
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Прогнозы</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric"></a>
-                            </li>
-                        </li>
-                    </ul>
+            <div class="down_part">
+                <div class="copyright">
+                    <img class="img_copyright" src="img/icons/CopyrightMobile.svg" alt="">
+                    <span>2008 - 2020, ООО “Мир Урании”</span>
                 </div>
-                <div class="box right">
-                    <ul class="rubrics_list">
-                        <li class="rubric_item">
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">СОТРУДНИЧЕСТВО:</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Авторам</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Переводчиками</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Партнерам</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Рекламодателям</a>
-                            </li>
-                            <li class="links_names">
-                                <a href="#" class="name_rubric">Вакансии</a>
-                            </li>
-                        </li>
-                    </ul>
-                    <div class="payments">
-                        <p class="text_payments">Мы принимаем<br> к оплате карты</p>
-                        <div class="box_pay">
-                            <div class="pay">
-                                <a href="#" class="picture_paysistem">
-                                    <img class="img_pay" src="img/elements/VisaCard.jpg" alt="Логтип платежной системы Visa">
-                                </a>
-                            </div>
-                            <div class="pay">
-                                <a href="#" class="picture_paysistem">
-                                    <img class="img_pay" src="img/elements/MasterCard.jpg" alt="Логтип платежной системы MasterCard">
-                                </a>
-                            </div>
-
+                <div class="payments">
+                    <p class="text_payments">Мы принимаем к оплате карты</p>
+                    <div class="box_pay">
+                        <div class="pay">
+                            <a href="#" class="picture_paysistem">
+                                <img class="img_pay" src="img/elements/VisaCard.jpg" alt="Логтип платежной системы Visa">
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <img class="img_copyright" src="img/icons/Copyright_wight.svg" alt="">
-                <span>2008 - 2020, ООО “Мир Урании”</span>
-            </div>
-
-        </div>
-    </footer>
-
-    <!-- FOOTER MOBILE VERSIA -->
-    <footer class="mobile_versia footer">
-        <div class="up_part">
-            <div class="footer_container">
-                <div class="footer_caption">
-                    <div class="brend_atributs">
-                        <div class="logo">
-                            <a class="link_logo" href="#">logo</a>
+                        <div class="pay">
+                            <a href="#" class="picture_paysistem">
+                                <img class="img_pay" src="img/elements/MasterCard.jpg" alt="Логтип платежной системы MasterCard">
+                            </a>
                         </div>
-                        <div class="store_name">
-                            <h1 class="company_name">
-                                "Мир Урании"
-                            </h1>
-                            <p class="internet_store">Интернет-магазин издательства</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
-            <ul class="rubrics_list">
-                <li class="rubric_item">
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">ГЛАВНАЯ</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Об издательстве</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Контакты</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Как заказать</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Доставка</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Способы оплаты</a>
-                    </li>
-
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Акции и скидки</a>
-                    </li>
-                    <li class="links_names">
-                        <a href="#" class="name_rubric">Подарочные сертификаты</a>
-                    </li>
-                </li>
-            </ul>
-            <ul class="rubrics_list">
-                <li class="rubric_item">
-                    <div class="links_names">
-                        <a href="#" class="name_rubric"><span class="general_name">АСТРОЛОГИЧЕСКИЙ ПОРТАЛ:</span></a>
-                    </div>
-                    <div class="links_names">
-                        <a href="#" class="name_rubric">Лекторий “Урания”</a>
-                    </div>
-                    <div class="links_names">
-                        <a href="#" class="name_rubric">Новости </a>
-                    </div>
-                    <div class="links_names">
-                        <a href="#" class="name_rubric">Библиотека</a>
-                    </div>
-                    <div class="links_names"> <a href="#" class="name_rubric">Обучение</a></div>
-
-                    <div class="links_names">
-                        <a href="#" class="name_rubric"></a>
-                    </div>
-
-                    <div class="links_names"><a href="#" class="name_rubric">Прогнозы</a></div>
-                    <div class="links_names">
-                        <a href="#" class="name_rubric"></a>
-                    </div>
-                </li>
-            </ul>
-            <div class="social_links">
-                <span class="text_links network">“Мир Урании” в</span>
-                <ul class="social_icons">
-                    <li class="item_icon network">
-                        <a href="#" class="social_link facebook">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_26sn_facebook_foot.svg" alt="Иконка фэйсбук">
-                            <span class="icon_text">Фэйсбук</span>
-                        </a>
-                    </li>
-                    <li class="item_icon network">
-                        <a href="#" class="social_link vkontakte">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_26sn_vkontakte_foot.svg" alt="Иконка вконтакте">
-                            <span class="icon_text">Вконтакте</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="arrow_up_mobile">
+                <a class="page_up" href="#">
+                    <img class="up" src="img/icons/Shape.svg" alt="Стрелка вверх">
+                </a>
             </div>
+        </footer>
 
-        </div>
-        <div class="down_part">
-            <div class="copyright">
-                <img class="img_copyright" src="img/icons/CopyrightMobile.svg" alt="">
-                <span>2008 - 2020, ООО “Мир Урании”</span>
-            </div>
-            <div class="payments">
-                <p class="text_payments">Мы принимаем к оплате карты</p>
-                <div class="box_pay">
-                    <div class="pay">
-                        <a href="#" class="picture_paysistem">
-                            <img class="img_pay" src="img/elements/VisaCard.jpg" alt="Логтип платежной системы Visa">
-                        </a>
-                    </div>
-                    <div class="pay">
-                        <a href="#" class="picture_paysistem">
-                            <img class="img_pay" src="img/elements/MasterCard.jpg" alt="Логтип платежной системы MasterCard">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="arrow_up_mobile">
-            <a class="page_up" href="#">
-                <img class="up" src="img/icons/Shape.svg" alt="Стрелка вверх">
-            </a>
-        </div>
-    </footer>
-
-</body>
+    </body>
