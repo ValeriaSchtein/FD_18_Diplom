@@ -81,17 +81,33 @@
     .service_icon:last-child {
         margin-left: 2px;
     }
-    .service_icon img {
-        min-width: 24px;
-        max-width: 30px;
-        min-height: 24px;
-        max-height: 30px;
-    }
-    .item_icons {
+    .service_link {
         display: block;
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0;
+        cursor: pointer;
+    }
+    .service_link.profile {
+        background-image: url("file:///C:/Users/Nadezhda/Documents/Education/IT/FD-18/Diplom_FD/img/icons/Tilda_Icons_3st_man_2.svg");
+    }
+    .service_link.basket {
+        background-image: url("file:///C:/Users/Nadezhda/Documents/Education/IT/FD-18/Diplom_FD/img/icons/Tilda_Icons_3st_bag_3.svg");
+    }
+    .service_link.hold {
+        background-image: url("..img/icons/Tilda_Icons_7cafe_flag_blue_navig.svg");
+    }
+    .service_link.help {
+        background-image: url("..img/icons/Tilda_Icons_30_system_question_blue.svg");
     }
     .icon_text {
-        display: none;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
     }
     .help_container {
         display: flex;
@@ -206,8 +222,11 @@
         color: #001D5B;
         text-transform: uppercase;
     }
+    .section_link:hover {
+        color: #E54B7C;
+    }
     .contact_icon:first-child,
-    .contact_icon:nth-child(n + 5) {
+    .contact_icon:nth-child(n+5) {
         display: none;
     }
     .caption_container {
@@ -327,11 +346,12 @@
     .service_icon {
         margin-right: 5px;
     }
-    .service_icon,
-    .contact_icon {
-        min-width: 20px;
-        max-width: 24px;
-        max-height: 24px;
+    .item_icon {
+        display: block;
+        width: 7.5vw;
+        height: 7.5vw;
+        max-width: 5vw;
+        max-height: 5vw;
     }
     .icon_text {
         display: none;
@@ -385,6 +405,9 @@
         font-size: 1.15vw;
         color: #001D5B;
         text-transform: uppercase;
+    }
+    .section_link:hover {
+        color: #E54B7C;
     }
     .contact_icon:nth-child(2) {
         display: none;

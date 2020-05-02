@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/header_mobile.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="img/icons/">
+
 
 
         <!-- Кодировка страницы -->
@@ -47,15 +49,13 @@
                     </div>
                     <ul class="service_list">
                         <li class="service_icon">
-                            <a href="#" class="profile">
-                                <img class="item_icon" src="img/icons/Tilda_Icons_3st_man 2.svg" alt="Иконка юзера">
-                                <span class="icon_text">Профиль</span>
+                            <span class="icon_text">Профиль</span>
+                            <a href="#" class="service_link profile">
                             </a>
                         </li>
                         <li class="service_icon">
-                            <a href="#" class="basket">
-                                <img class="item_icon" src="img/icons/Tilda_Icons_3st_bag 3.svg" alt="Иконка корзины">
-                                <span class="icon_text">Корзина</span>
+                            <span class="icon_text">Корзина</span>
+                            <a href="#" class="service_link basket">
                             </a>
                         </li>
                     </ul>
@@ -75,16 +75,13 @@
                 </button>
                 </form>
                 <ul class="service_list">
-                    <li class="service_icon">
-                        <a href="#" class="hold">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue_navig.svg" alt="Иконка отложенное">
-                            <span class="icon_text">Отложенное</span>
+                    <li class="service_icon"> <span class="icon_text">Отложенное</span>
+                        <a href="#" class="service_link hold">
                         </a>
                     </li>
                     <li class="service_icon">
-                        <a href="#" class="help">
-                            <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question_blue.svg" alt="Иконка помощь">
-                            <span class="icon_text">Помощьь</span>
+                        <span class="icon_text">Помощьь</span>
+                        <a href="#" class="service_link help">
                         </a>
                     </li>
                 </ul>
@@ -123,31 +120,31 @@
                             </a>
                         </li>
                         <li class="contact_icon">
-                            <a href="#" class="telephone_icon">
+                            <a href="#" class="service_link telephone_icon">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_2web_phone 1.svg" alt="Иконка телефона">
                                 <span class="icon_text">телефон</span>
                             </a>
                         </li>
                         <li class="contact_icon">
-                            <a href="#" class="location_icon">
+                            <a href="#" class="service_link location_icon">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_13ph_location 1.svg" alt="Иконка локации">
                                 <span class="icon_text">Локация</span>
                             </a>
                         </li>
                         <li class="contact_icon">
-                            <a href="#" class="location_icon">
+                            <a href="#" class="service_link mail_icon">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_1ed_mail 2.svg" alt="Иконка почты">
                                 <span class="icon_text">Почта</span>
                             </a>
                         </li>
                         <li class="contact_icon">
-                            <a href="#" class="social_link facebook_up">
+                            <a href="#" class="service_link social_link facebook_up">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_26sn_facebook 2.svg" alt="Иконка Facebook">
                                 <span class="icon_text">Facebook</span>
                             </a>
                         </li>
                         <li class="contact_icon">
-                            <a href="#" class="social_link vkontakte_up">
+                            <a href="#" class="service_link social_link vkontakte_up">
                                 <img class="item_icon" src="img/icons/Tilda_Icons_26sn_vkontakte 2.svg" alt="Иконка Вконтакте">
                                 <span class="icon_text">Вконтакте</span>
                             </a>
@@ -185,26 +182,40 @@
                     <div class="service_menu">
                         <ul class="service_list">
                             <li class="service_icon">
-                                <a href="#" class="profile">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_3st_man 2.svg" alt="Иконка юзера">
+                                <a href="#" class="service_link profile">
+
+                                    <svg class="item_icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1569 16.2531C8.90749 16.2531 3.82422 21.3327 3.82422 27.5778C3.82422 27.8168 4.03353 28.026 4.27274 28.026H26.0112C26.2504 28.026 26.4597 27.8168 26.4597 27.5778C26.4896 21.3327 21.4063 16.2531 15.1569 16.2531ZM15.1569 17.1495C16.5324 17.1495 17.878 17.4184 19.074 17.9264L15.3064 20.7052L11.2697 17.9264C12.4658 17.4184 13.7814 17.1495 15.1569 17.1495ZM4.75117 27.1295C4.90068 23.3347 7.14329 20.0479 10.3129 18.3447L15.0672 21.6017C15.1569 21.6614 15.2466 21.6913 15.3064 21.6913C15.3961 21.6913 15.4858 21.6614 15.5755 21.6017L20.001 18.3447C23.2004 20.018 25.4132 23.3048 25.5627 27.1295H4.75117Z" fill="white"/>
+                                        <path d="M14.9774 15.0279C18.5655 15.0279 21.4959 12.0996 21.4959 8.51394C21.4959 4.92829 18.5655 2 14.9774 2C11.3893 2 8.45898 4.92829 8.45898 8.51394C8.45898 12.1295 11.3893 15.0279 14.9774 15.0279ZM14.9774 2.92629C17.3695 2.92629 19.4028 4.42032 20.2101 6.51195C19.941 6.36255 19.6121 6.18327 19.3131 6.00398C18.0572 5.25697 17.1901 4.77888 16.622 4.83864C15.4857 4.92829 14.8279 5.37649 14.1103 5.8247C13.7216 6.06374 13.303 6.33267 12.7946 6.54183L12.6451 6.60159C11.5388 7.0498 10.8511 7.3486 9.50552 7.49801C9.95404 4.89841 12.2265 2.92629 14.9774 2.92629ZM9.35602 8.39442C10.9707 8.24502 11.778 7.91633 12.9441 7.40837L13.0936 7.3486C13.6917 7.10956 14.1402 6.81076 14.5588 6.54183C15.2166 6.12351 15.7847 5.76494 16.6818 5.70518C17.0107 5.6753 18.1469 6.36255 18.8347 6.751C19.5224 7.16932 20.0905 7.49801 20.5091 7.61753C20.5689 7.91633 20.5988 8.21514 20.5988 8.51394C20.5988 11.5916 18.0871 14.1315 14.9774 14.1315C11.8677 14.1315 9.35602 11.6215 9.35602 8.51394C9.35602 8.48406 9.35602 8.45418 9.35602 8.39442Z" fill="white"/>
+                                        </svg>
+
                                     <span class="icon_text">Профиль</span>
                                 </a>
                             </li>
                             <li class="service_icon">
-                                <a href="#" class="hold">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag 2.svg" alt="Иконка отложенное">
+                                <a href="#" class="service_link hold">
+
+                                    <svg class="item_icon" width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10177 29.2389L15.4993 23.6024L22.5326 29.229C22.7365 29.392 23.0159 29.4238 23.2515 29.311C23.487 29.1977 23.6365 28.9599 23.6365 28.6986V5.23933C23.6365 4.90324 23.3919 4.62604 23.0716 4.57168C23.015 4.55628 22.9566 4.54541 22.895 4.54541L7.01107 4.54541V4.57168C7.01107 8.40228 7.01107 4.19619 7.01107 4.57168C6.63558 4.57168 7.01107 5.52831 7.01107 5.90381C6.63558 5.90381 7.01107 6.27931 7.01107 5.90381C7.01107 6.27931 10.1781 7.34509 7.01107 5.90381V28.6981C7.01107 28.9563 7.15737 29.1923 7.38883 29.3069C7.61983 29.4215 7.89613 29.3952 8.10177 29.2389ZM8.36901 5.90426L22.2772 5.90426V27.2849L15.9332 22.2101C15.6895 22.0153 15.3448 22.0112 15.0971 22.2001L8.36901 27.3266L8.36901 5.90426Z" fill="#FAF4F4"/>
+                                        </svg>
                                     <span class="icon_text">Отложенное</span>
                                 </a>
                             </li>
                             <li class="service_icon">
-                                <a href="#" class="basket">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_3st_bag 3.svg" alt="Иконка корзины">
+                                <a href="#" class="service_link basket">
+
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.5209 8.36179L20.1638 8.32442V6.12448C20.1638 3.21725 17.7982 0.852295 14.891 0.852295C11.9841 0.852295 9.6191 3.21755 9.6191 6.12448V8.20663L6.38362 8.17046C6.26105 8.17315 6.14835 8.2159 6.06345 8.3002C5.97825 8.38451 5.93042 8.4993 5.93042 8.61888V28.5938C5.93042 28.8416 6.13101 29.0422 6.37884 29.0422H23.5164C23.7643 29.0422 23.9649 28.8416 23.9649 28.5938V8.8105C23.9646 8.56477 23.7667 8.36478 23.5209 8.36179ZM10.5159 6.12448C10.5159 3.712 12.4785 1.74913 14.891 1.74913C17.3038 1.74913 19.2669 3.712 19.2669 6.12448V8.31425L10.5159 8.2165V6.12448ZM23.0677 28.1453H6.82696V9.07238L9.6191 9.10347V10.4466C9.00058 10.649 8.54918 11.2248 8.54918 11.9103C8.54918 12.7631 9.24303 13.4567 10.0956 13.4567C10.9482 13.4567 11.6421 12.7628 11.6421 11.9103C11.6421 11.2042 11.1634 10.6134 10.5156 10.429V9.11363L19.2666 9.21139V10.438C18.6335 10.6317 18.1686 11.2146 18.1686 11.9103C18.1686 12.7631 18.8625 13.4567 19.7151 13.4567C20.5676 13.4567 21.2615 12.7628 21.2615 11.9103C21.2615 11.2146 20.7966 10.6314 20.1635 10.438V9.22155L23.0674 9.25414V28.1453H23.0677ZM10.0956 11.2607C10.4538 11.2607 10.7452 11.5521 10.7452 11.9103C10.7452 12.2684 10.4538 12.5599 10.0956 12.5599C9.73748 12.5599 9.44601 12.2684 9.44601 11.9103C9.44601 11.5521 9.73748 11.2607 10.0956 11.2607ZM19.7154 11.2607C20.0735 11.2607 20.365 11.5521 20.365 11.9103C20.365 12.2684 20.0735 12.5599 19.7154 12.5599C19.3572 12.5599 19.0658 12.2684 19.0658 11.9103C19.0658 11.5521 19.3572 11.2607 19.7154 11.2607Z" fill="white"/>
+                                            </svg>
                                     <span class="icon_text">Корзина</span>
                                 </a>
                             </li>
                             <li class="service_icon">
-                                <a href="#" class="help">
-                                    <img class="item_icon" src="img/icons/Tilda_Icons_30_system_question 2.svg" alt="Иконка помощь">
+                                <a href="#" class="service_link help">
+                                    <svg class="item_icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0037 24.4203C15.0007 24.4203 14.9977 24.4203 14.995 24.4203C14.5048 24.4203 14.104 24.7902 14.0989 25.2485C14.0941 25.7096 14.4923 26.0882 14.9866 26.093C14.9896 26.093 14.9926 26.093 14.9953 26.093C15.2313 26.093 15.4538 26.0082 15.6228 25.8538C15.7934 25.6974 15.889 25.4883 15.8911 25.265C15.8958 24.8039 15.4977 24.425 15.0037 24.4203Z" fill="white"/>
+                                        <path d="M15.2465 1.4003C15.2217 1.40002 15.1975 1.40002 15.1727 1.40002C11.0893 1.40002 7.74721 4.46018 7.70779 8.25241C7.7054 8.48352 7.90403 8.67225 8.15134 8.67476H8.15582C9.00006 8.79639 9.99305 8.538 10.0001 7.86306C10.0347 4.52887 11.5791 2.23664 15.1727 2.23664C15.1942 2.23664 15.2163 2.23664 15.2378 2.23692C18.8612 2.26981 20.535 4.50879 20.5001 7.86306C20.4759 10.2042 19.7961 12.4955 17.5001 13.5334C15.0489 15.1614 14.0001 16.8703 14.0001 18.6667V20.5334L14.3606 22.1718C14.3582 22.403 14.6359 22.5833 14.8833 22.5858H14.8877C15.1333 22.5858 15.3334 22.4013 15.3358 22.1718L15.3707 18.805C15.3839 17.5313 15.9054 15.7842 18.3158 14.6947C20.9162 13.5197 22.6143 11.0441 22.6415 8.3879C22.6815 4.57197 19.3639 1.43766 15.2465 1.4003Z" fill="white"/>
+                                        </svg>
                                     <span class="icon_text">Помощь</span>
                                 </a>
                             </li>
@@ -355,12 +366,11 @@
                                     <div class="book_price">
                                         <span class="price_rouble">700 р.</span>
                                         <button class="buy">Купить</button>
+
                                     </div>
                                 </div>
                                 <div class="flag_icon">
                                     <a href="#" class="icon_link">
-                                        <img class="item_icon" src="img/icons/Tilda_Icons_7cafe_flag_blue.svg" alt="Иконка флажка">
-                                        <span class="icon_text">Отложить</span>
                                     </a>
                                 </div>
                             </div>
