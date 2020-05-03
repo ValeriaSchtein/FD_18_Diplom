@@ -31,6 +31,10 @@
      font-size: 1.5em;
  }
  
+ .name_rubric:hover {
+     color: #D2F296;
+ }
+ 
  .links_names {
      margin-top: 1rem;
  }
@@ -43,25 +47,24 @@
  }
  
  .text_links {
-     font-size: 5.6vw;
+     font-size: 5vw;
  }
  
  .social_icons {
      display: flex;
      flex-direction: row;
      align-items: center;
-     margin-left: 1em;
+     margin-left: 3%;
  }
  
- .item_icon.network {
+ .social_icon {
      width: 24px;
-     height: 24px;
- }
- 
- .item_icon.network:first-child {
      margin-right: 1em;
+     fill: #ffffff;
  }
- 
+ .social_icon:hover {
+    fill: #D2F296;
+ }
  .down_part {
      display: flex;
      flex-direction: column;
@@ -72,6 +75,8 @@
  
  .copyright {
      font-size: 5vw;
+     align-items: center;
+     display: flex;
  }
  
  .img_copyright {
@@ -134,12 +139,25 @@
      .subscription_block {
          display: none;
      }
+     .social_links {
+         width: 50%;
+         display: flex;
+         justify-content: flex-end;
+     }
      .text_links {
          font-size: 2.4vw;
      }
-     .item_icon.network {
-         width: 30px;
-         height: 30px;
+     .network {
+         margin-right: 5px;
+     }
+     .social_icons {
+         display: flex;
+         width: 24%;
+         justify-content: space-between;
+     }
+     .social_icon {
+         width: 4vw;
+         fill: #ffffff;
      }
      .menu_site {
          display: flex;
@@ -292,12 +310,32 @@
          color: #001D5B;
          font-weight: 500;
      }
+     .subscription_footer:hover {
+         color: #E54B7C;
+     }
+     .text_links.network {
+         margin-right: auto;
+     }
+     .social_icons {
+         margin-left: 0;
+     }
+     .social_links {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin-top: 0;
+         width: 25%;
+     }
      .text_links {
          font-size: 1.3vw;
      }
-     .item_icon.network {
-         width: 30px;
-         height: 30px;
+     .social_icon {
+         width: 2.2vw;
+     }
+     .social_icons {
+         display: flex;
+         width: 25%;
+         fill: #ffffff;
      }
      .menu_site {
          display: flex;

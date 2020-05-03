@@ -30,6 +30,11 @@
            font-size: 5.2vw;
        }
        
+       .name_block:hover,
+       .title_service:hover {
+           color: #0ABAC7;
+       }
+       
        .banner_big {
            box-sizing: border-box;
            width: 100%;
@@ -61,6 +66,10 @@
        
        .book_img {
            width: 30%;
+       }
+       
+       .book_img:hover {
+           width: 31.5%;
        }
        
        .photo-img {
@@ -114,6 +123,11 @@
            border: 0 solid #81849F;
            background-color: #81849F;
            border-radius: 30px;
+       }
+       
+       .dot:hover {
+           width: 4.5px;
+           height: 4.5px;
        }
        
        .item_slick:nth-child(3) .dot {
@@ -170,6 +184,10 @@
            top: -7px;
        }
        
+       .flag_icon:hover {
+           width: 28%;
+       }
+       
        .content_book_card {
            display: flex;
            flex-direction: column;
@@ -200,7 +218,6 @@
        
        .link_name_book:hover {
            color: #E54B7C;
-           font-size: 4.1vw;
        }
        
        .name_author {
@@ -257,6 +274,7 @@
        .buy:focus {
            background: #D2F296;
            border: 1px solid #027B89;
+           outline: none;
        }
        
        .request {
@@ -296,7 +314,7 @@
        .publishing_news .arrow_right {
            position: absolute;
            display: block;
-           width: 2.5em;
+           width: 2.8em;
            top: 40%;
            padding: 7px;
        }
@@ -336,6 +354,10 @@
            font-size: 6vw;
            line-height: 1.5em;
            color: #ffffff;
+       }
+       
+       .name_new:hover {
+           color: #0ABAC7;
        }
        
        .second_new {
@@ -394,6 +416,10 @@
            color: #001D5B;
            text-decoration: underline;
        }
+       
+       .name_prg:hover {
+           color: #E54B7C;
+       }
        /*==== URANIA-WORLD SERVIS ====*/
        
        .service_block_mobile {
@@ -408,7 +434,7 @@
        .service_block_mobile .arrow_right {
            position: absolute;
            display: block;
-           width: 2.5em;
+           width: 2.8em;
            top: 38%;
            padding: 7px;
        }
@@ -506,6 +532,10 @@
            text-decoration: underline;
        }
        
+       .author_link_banner:hover {
+           color: #0ABAC7;
+       }
+       
        .servise_block.desktop {
            display: none;
        }
@@ -530,6 +560,10 @@
            color: #001D5B;
        }
        
+       .subscription:hover {
+           color: #E54B7C;
+       }
+       
        @media (min-width: 641px) and (max-width: 960px) {
            /*===== BANNER BLOCK ====*/
            .upper_banner {
@@ -545,6 +579,10 @@
            .name_block,
            .title_service {
                font-size: 2.85vw;
+           }
+           .name_block:hover,
+           .title_service:hover {
+               color: #0ABAC7;
            }
            .banner_big {
                display: flex;
@@ -659,7 +697,7 @@
            .reccomend .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 20%;
                padding: 7px;
            }
@@ -686,9 +724,6 @@
            .link_name_book {
                color: #001D5B;
            }
-           .link_name_book:hover {
-               font-size: 1.9vw;
-           }
            .name_author {
                font-size: 1.7vw;
            }
@@ -714,7 +749,7 @@
            .publishing_news .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 40%;
                padding: 7px;
            }
@@ -753,6 +788,9 @@
            .name_new {
                font-size: 3.1vw;
                line-height: 1.4em;
+           }
+           .name_new:hover {
+               color: #0ABAC7;
            }
            .person,
            .who_is {
@@ -835,6 +873,9 @@
                text-decoration: underline;
                line-height: 1.4em;
            }
+           .about:hover {
+               color: #025E68;
+           }
            .block_info.second {
                margin-top: 4%;
                width: 100%;
@@ -864,6 +905,9 @@
            }
            .name_prg {
                font-size: 2.4vw;
+           }
+           .name_prg:hover {
+               color: #E54B7C;
            }
            /*==== URANIA-WORLD SERVIS ====*/
            .service_block_mobile {
@@ -913,7 +957,7 @@
            .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 40%;
                padding: 7px;
            }
@@ -945,6 +989,10 @@
                font-size: 2.8vw;
                line-height: 1.3em;
                letter-spacing: 1px;
+           }
+           .link_service:hover {
+               color: #0ABAC7;
+               text-decoration: underline;
            }
            .name_service {
                margin-bottom: 5.3%;
@@ -986,6 +1034,10 @@
            .title_service {
                font-size: 1.8vw;
            }
+           .name_block:hover,
+           .title_service:hover {
+               color: #0ABAC7;
+           }
            .banner_big {
                display: flex;
                flex-direction: column;
@@ -1004,6 +1056,9 @@
            }
            .book_img {
                width: 35%;
+           }
+           .book_img:hover {
+               width: 36%;
            }
            .book_title {
                font-size: 2.5vw;
@@ -1024,6 +1079,10 @@
            .dot {
                width: 0.5vw;
                height: 0.5vw;
+           }
+           .dot:hover {
+               width: 0.7vw;
+               height: 0.7vw;
            }
            .item_slick:nth-child(3) .dot {
                border: 0 solid #ffffff;
@@ -1123,7 +1182,7 @@
            .reccomend .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 20%;
                padding: 7px;
            }
@@ -1148,6 +1207,9 @@
                padding: 0;
                top: 0;
            }
+           .flag_icon:hover {
+               width: 15%;
+           }
            .elements_card {
                display: flex;
                flex-direction: column;
@@ -1161,9 +1223,6 @@
            }
            .link_name_book {
                color: #001D5B;
-           }
-           .link_name_book:hover {
-               font-size: 1.3vw;
            }
            .name_author {
                font-size: 1.1vw;
@@ -1191,7 +1250,7 @@
            .publishing_news .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 40%;
                padding: 7px;
            }
@@ -1236,6 +1295,9 @@
            .name_new {
                font-size: 1.9vw;
                line-height: 1.4em;
+           }
+           .name_new:hover {
+               color: #0ABAC7;
            }
            .person,
            .who_is {
@@ -1317,6 +1379,9 @@
                text-decoration: underline;
                line-height: 1.5em;
            }
+           .about:hover {
+               color: #025E68;
+           }
            .block_info.second {
                margin-top: 4%;
                width: 100%;
@@ -1342,7 +1407,7 @@
            .block_astroprg .arrow_left {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 30%;
                padding: 7px;
            }
@@ -1361,6 +1426,9 @@
            }
            .name_prg {
                font-size: 1.65vw;
+           }
+           .name_prg:hover {
+               color: #E54B7C;
            }
            /*==== URANIA-WORLD SERVIS ====*/
            .service_block_mobile {
@@ -1407,7 +1475,7 @@
            .banner_service .arrow_right {
                position: absolute;
                display: block;
-               width: 2.5em;
+               width: 2.8em;
                top: 40%;
                padding: 7px;
            }
@@ -1458,6 +1526,10 @@
                line-height: 1.3em;
                letter-spacing: 1px;
            }
+           .link_service:hover {
+               color: #0ABAC7;
+               text-decoration: underline;
+           }
            .name_service {
                margin-bottom: 3%;
            }
@@ -1469,7 +1541,7 @@
            }
            .arrow_up {
                position: absolute;
-               width: 2.5vw;
+               width: 2.2vw;
                padding: 0;
                top: 99%;
                right: 2%;

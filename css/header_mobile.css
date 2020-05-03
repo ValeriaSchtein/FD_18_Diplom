@@ -73,41 +73,29 @@
         justify-content: space-between;
         align-items: center;
         width: 15%;
-        max-width: 65px;
     }
     .service_icon.tablet {
         display: none;
     }
-    .service_icon:last-child {
+    .service_icon_mobile:last-child {
         margin-left: 2px;
     }
-    .service_link {
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-size: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 0;
-        cursor: pointer;
+    .item_icon_mobile {
+        width: 7.5vw;
+        fill: #ffffff;
     }
-    .service_link.profile {
-        background-image: url("file:///C:/Users/Nadezhda/Documents/Education/IT/FD-18/Diplom_FD/img/icons/Tilda_Icons_3st_man_2.svg");
+    .item_icon_mobile:hover {
+        fill: #D2F296;
+        width: 8vw;
     }
-    .service_link.basket {
-        background-image: url("file:///C:/Users/Nadezhda/Documents/Education/IT/FD-18/Diplom_FD/img/icons/Tilda_Icons_3st_bag_3.svg");
+    .item_icon_mobile.nav {
+        fill: #0293A4;
     }
-    .service_link.hold {
-        background-image: url("..img/icons/Tilda_Icons_7cafe_flag_blue_navig.svg");
-    }
-    .service_link.help {
-        background-image: url("..img/icons/Tilda_Icons_30_system_question_blue.svg");
+    .item_icon_mobile.nav:hover {
+        fill: #A6D848;
     }
     .icon_text {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        clip: rect(1px, 1px, 1px, 1px);
+        display: none;
     }
     .help_container {
         display: flex;
@@ -139,6 +127,10 @@
         color: #83B5B9;
         box-shadow: inset 0px 3px 4px grey;
     }
+    .search_input:hover,
+    .search_input:focus {
+        border: 2px solid #D2F296;
+    }
     .search_input::placeholder {
         color: #83B5B9;
         font-size: 1.2rem;
@@ -158,8 +150,10 @@
         border-radius: 2em;
         cursor: pointer;
     }
-    .search_button:hover {
-        background-color: #027B89;
+    .search_button:hover,
+    .search_button:focus {
+        background-color: #D2F296;
+        outline: none;
     }
     .loop {
         position: absolute;
@@ -167,6 +161,11 @@
         height: 70%;
         top: 17%;
         right: 12%;
+        fill: #ffffff;
+    }
+    .loop:hover,
+    .loop:focus {
+        fill: #001D5B;
     }
     .desktop_versia {
         display: none;
@@ -226,8 +225,14 @@
         color: #E54B7C;
     }
     .contact_icon:first-child,
-    .contact_icon:nth-child(n+5) {
+    .contact_icon:nth-child(n + 5) {
         display: none;
+    }
+    .item_icon_contact {
+        fill: #001D5B;
+    }
+    .item_icon_contact:hover {
+        fill: #E54B7C;
     }
     .caption_container {
         width: 100%;
@@ -302,6 +307,10 @@
         color: #83B5B9;
         font-size: 1rem;
     }
+    .search_input:hover,
+    .search_input:focus {
+        border: 2px solid #D2F296;
+    }
     .search_button {
         position: absolute;
         top: 0px;
@@ -317,8 +326,10 @@
         border-radius: 20em;
         cursor: pointer;
     }
-    .search_button:hover {
-        background-color: #027B89;
+    .search_button:hover,
+    .search_button:focus {
+        background-color: #D2F296;
+        outline: none;
     }
     .loop {
         position: absolute;
@@ -326,12 +337,18 @@
         height: 70%;
         top: 17%;
         right: 12%;
+        fill: #ffffff;
+    }
+    .loop:hover,
+    .loop:focus {
+        fill: #001D5B;
     }
     .service_menu {
         display: flex;
         width: 14%;
     }
     .service_list {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -343,15 +360,18 @@
     .service_icon.smartphone {
         display: none;
     }
-    .service_icon {
-        margin-right: 5px;
-    }
     .item_icon {
-        display: block;
-        width: 7.5vw;
-        height: 7.5vw;
+        width: 3vw;
         max-width: 5vw;
-        max-height: 5vw;
+        fill: #ffffff;
+    }
+    .item_icon:last-child {
+        width: 2.6vw;
+        margin-top: 2px;
+    }
+    .item_icon:hover {
+        width: 2.8vw;
+        fill: #D2F296;
     }
     .icon_text {
         display: none;
@@ -412,8 +432,7 @@
     .contact_icon:nth-child(2) {
         display: none;
     }
-    .contact_icon,
-    .service_icon {
+    .contact_icon {
         width: 2.4vw;
         max-width: 38px;
         margin-right: 1em;
@@ -427,6 +446,24 @@
         font-size: 1.25vw;
         color: #001D5B;
     }
+    .telephone_number:hover {
+        fill: #E54B7C;
+    }
+    .item_icon_contact {
+        fill: #001D5B;
+    }
+    .item_icon_contact:hover {
+        fill: #E54B7C;
+    }
+    .facebook_up .item_icon_contact,
+    .vkontakte_up .item_icon_contact {
+        fill: #ffffff;
+    } 
+    .facebook_up .item_icon_contact:hover,
+    .vkontakte_up .item_icon_contact:hover {
+        fill: #D978B0;
+    } 
+    
     .caption_container {
         width: 100%;
         display: flex;
@@ -497,6 +534,10 @@
         color: #83B5B9;
         font-size: 1.15vw;
     }
+    .search_input:hover,
+    .search_input:focus {
+        border: 2px solid #D2F296;
+    }
     .search_button {
         position: absolute;
         top: 0px;
@@ -512,8 +553,10 @@
         border-radius: 2em;
         cursor: pointer;
     }
-    .search_button:hover {
-        background-color: #027B89;
+    .search_button:hover,
+    .search_button:focus {
+        background-color: #D2F296;
+        outline: none;
     }
     .loop {
         position: absolute;
@@ -521,17 +564,20 @@
         height: 70%;
         top: 17%;
         right: 12%;
+        fill: #ffffff;
+    }
+    .loop:hover,
+    .loop:focus {
+        fill: #001D5B;
     }
     .service_menu {
         display: flex;
-        width: 13.6%;
     }
     .service_list {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        width: 100%;
     }
     .service_icon.tablet {
         display: block;
@@ -540,12 +586,22 @@
         display: none;
     }
     .service_icon {
-        margin-right: 5px;
+        margin-right: 1em;
+    }
+    .item_icon {
+        width: 2.5vw;
+        height: auto;
+        max-width: 5vw;
+        fill: #ffffff;
+    }
+    .item_icon:last-child {
+        width: 2.25vw;
+    }
+    .item_icon:hover {
+        width: 2.75vw;
+        fill: #D2F296;
     }
     .icon_text {
         display: none;
     }
-}
-
-
 }
