@@ -1217,7 +1217,7 @@
                top: 4px;
            }
            .flag_icon:hover {
-               transform: scale(1.1);
+               transform: scale(1.1, 1);
            }
            .elements_card {
                display: flex;
