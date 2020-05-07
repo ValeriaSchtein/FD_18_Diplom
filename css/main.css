@@ -60,7 +60,7 @@
            justify-content: center;
            align-items: flex-start;
            color: #ffffff;
-           margin-left: 7%;
+           margin-left: 4%;
        }
        
        .book_img {
@@ -79,12 +79,12 @@
            font-size: 4.5vw;
            font-weight: 500;
            margin-bottom: 0.9rem;
-           margin-left: -7px;
        }
        
        .banner_text {
            font-size: 3.5vw;
            line-height: 1.5em;
+           padding-left: 0.8em;
        }
        
        .author_banner {
@@ -92,6 +92,7 @@
            font-weight: 300;
            font-size: 3.65vw;
            line-height: 1.6em;
+           padding-left: 0.8em;
        }
        
        .slick_dots {
@@ -167,8 +168,8 @@
            display: flex;
            flex-direction: column;
            justify-content: space-between;
-           width: 16%;
-           margin-right: 1%;
+           width: 12.5%;
+           margin-right: 3%;
            position: relative;
            padding-bottom: 1rem;
        }
@@ -176,14 +177,13 @@
        .flag_icon {
            display: block;
            width: 25%;
-           padding: 7px;
            position: absolute;
-           left: 60%;
+           left: 75%;
            top: 0px;
        }
        
        .flag_icon:hover {
-           transform: scale(1.1);
+           transform: scale(1.1, 1);
        }
        
        .content_book_card {
@@ -195,13 +195,13 @@
            display: flex;
            flex-direction: column;
            justify-content: space-between;
-           width: 83%;
+           width: 100%;
            min-height: 6em;
            margin-top: 1em;
        }
        
        .picture_book {
-           width: 60%;
+           width: 70%;
        }
        
        .name_book {
@@ -211,38 +211,42 @@
        }
        
        .link_name_book {
+           display: inline_block;
            color: #001D5B;
+           word-wrap: normal;
        }
        
        .link_name_book:hover {
            color: #E54B7C;
+           transform: scale(1, 1.1);
        }
        
        .name_author {
+           display: block;
            font-size: 3.6vw;
            color: #0293A4;
        }
        
        .name_author:hover {
            color: #025E68;
-           transform: scale(1.2);
+           transform: scale(1, 1.1);
            text-decoration: underline;
        }
        
        .price_block {
-           width: 90%;
+           width: 100%;
            display: flex;
            flex-direction: column;
            height: 16vw;
            margin-top: 1em;
+           justify-content: flex-start;
        }
        
        .book_price {
            display: flex;
            flex-direction: row;
            justify-content: space-between;
-           margin-bottom: 5px;
-           margin-right: 3px;
+           margin-bottom: 7px;
        }
        
        .price_rouble {
@@ -252,21 +256,23 @@
        }
        
        .buy {
-           width: 52%;
+           width: 56%;
            padding: 4%;
            font-weight: 500;
            font-size: 4vw;
            color: #ffffff;
            background-color: #E54B7C;
            border: none;
-           margin-right: 10%;
+       }
+       
+       .buy:first-child {
+           margin-bottom: 3px;
        }
        
        .buy:hover {
-           transform: scale(1.1);
+           transform: scale(1.03, 1);
            background: #E32745;
            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-           margin-right: 8%;
        }
        
        .buy:focus {
@@ -280,7 +286,7 @@
        }
        
        .button_request {
-           width: 80%;
+           width: 87%;
            padding: 6%;
            font-size: 4vw;
            font-weight: 500;
@@ -389,6 +395,7 @@
        
        .block_astroprg {
            padding-bottom: 5%;
+           padding-top: 3%;
        }
        
        .prg_card {
@@ -399,7 +406,6 @@
            width: 9%;
            position: relative;
            margin-right: 5%;
-           margin-top: 2%;
        }
        
        .prg_picture {
@@ -727,7 +733,7 @@
                font-size: 1.7vw;
            }
            .name_author:hover {
-               transform: scale(1.2);
+               transform: scale(1, 1.1);
            }
            .price_rouble {
                font-size: 2.1vw;
@@ -737,6 +743,9 @@
            }
            .buy {
                font-size: 2.1vw;
+           }
+           .flag_icon {
+               top: 2px;
            }
            /*==== NEWS BLOCK ====*/
            .publishing_news {
@@ -1196,15 +1205,16 @@
                left: 2vw;
            }
            .book_card {
-               width: 18.6%;
+               width: 13.8%;
+               margin-right: 5.5%;
            }
            .flag_icon {
                display: block;
                width: 12%;
                position: absolute;
-               left: 72%;
+               left: 71%;
                padding: 0;
-               top: 0;
+               top: 4px;
            }
            .flag_icon:hover {
                transform: scale(1.1);
@@ -1213,7 +1223,7 @@
                display: flex;
                flex-direction: column;
                justify-content: space-between;
-               width: 80%;
+               width: 100%;
                margin-top: 1.2em;
            }
            .name_book {
@@ -1227,7 +1237,7 @@
                font-size: 1.1vw;
            }
            .name_author:hover {
-               transform: scale(2);
+               transform: scale(1, 1.1);
            }
            .price_block {
                height: 5.6vw;
