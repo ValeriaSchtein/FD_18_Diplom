@@ -4,7 +4,6 @@
            justify-content: center;
            background-color: #FAF4F4;
            padding-top: 3%;
-           z-index: 99;
            padding-bottom: 6%;
        }
        /*===== BANNER BLOCK ====*/
@@ -69,7 +68,7 @@
        }
        
        .book_img:hover {
-           width: 31.5%;
+           transform: scale(1.1);
        }
        
        .photo-img {
@@ -126,8 +125,7 @@
        }
        
        .dot:hover {
-           width: 4.5px;
-           height: 4.5px;
+           transform: scale(1.1);
        }
        
        .item_slick:nth-child(3) .dot {
@@ -181,11 +179,11 @@
            padding: 7px;
            position: absolute;
            left: 60%;
-           top: -7px;
+           top: 0px;
        }
        
        .flag_icon:hover {
-           width: 28%;
+           transform: scale(1.1);
        }
        
        .content_book_card {
@@ -227,7 +225,7 @@
        
        .name_author:hover {
            color: #025E68;
-           font-size: 3.7vw;
+           transform: scale(1.2);
            text-decoration: underline;
        }
        
@@ -265,7 +263,7 @@
        }
        
        .buy:hover {
-           width: 54%;
+           transform: scale(1.1);
            background: #E32745;
            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
            margin-right: 8%;
@@ -294,7 +292,7 @@
        }
        
        .button_request:hover {
-           width: 82%;
+           transform: scale(1.1);
            padding: 6.1%;
            background: #E32745;
            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -419,6 +417,7 @@
        
        .name_prg:hover {
            color: #E54B7C;
+           transform: scale(1.1);
        }
        /*==== URANIA-WORLD SERVIS ====*/
        
@@ -728,7 +727,7 @@
                font-size: 1.7vw;
            }
            .name_author:hover {
-               font-size: 1.8vw;
+               transform: scale(1.2);
            }
            .price_rouble {
                font-size: 2.1vw;
@@ -846,7 +845,7 @@
                margin-top: 1em;
            }
            .button_request:hover {
-               width: 87%;
+               transform: scale(1.1);
                padding: 8.2% 3.6%;
            }
            .info_container {
@@ -908,6 +907,7 @@
            }
            .name_prg:hover {
                color: #E54B7C;
+               transform: scale(1.1);
            }
            /*==== URANIA-WORLD SERVIS ====*/
            .service_block_mobile {
@@ -1058,7 +1058,7 @@
                width: 35%;
            }
            .book_img:hover {
-               width: 36%;
+               transform: scale(1.1);
            }
            .book_title {
                font-size: 2.5vw;
@@ -1081,8 +1081,7 @@
                height: 0.5vw;
            }
            .dot:hover {
-               width: 0.7vw;
-               height: 0.7vw;
+               transform: scale(1.1);
            }
            .item_slick:nth-child(3) .dot {
                border: 0 solid #ffffff;
@@ -1208,7 +1207,7 @@
                top: 0;
            }
            .flag_icon:hover {
-               width: 15%;
+               transform: scale(1.1);
            }
            .elements_card {
                display: flex;
@@ -1228,7 +1227,7 @@
                font-size: 1.1vw;
            }
            .name_author:hover {
-               font-size: 1.2vw;
+               transform: scale(2);
            }
            .price_block {
                height: 5.6vw;
@@ -1353,7 +1352,7 @@
                margin-top: 1em;
            }
            .info .button_request:hover {
-               width: 71%;
+               transform: scale(1.1);
            }
            .info_container {
                width: 36.6%;
@@ -1429,6 +1428,7 @@
            }
            .name_prg:hover {
                color: #E54B7C;
+               transform: scale(1.1);
            }
            /*==== URANIA-WORLD SERVIS ====*/
            .service_block_mobile {

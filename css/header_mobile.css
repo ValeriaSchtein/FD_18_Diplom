@@ -86,7 +86,6 @@
     }
     .item_icon_mobile:hover {
         fill: #D2F296;
-        width: 8vw;
     }
     .item_icon_mobile.nav {
         fill: #0293A4;
@@ -115,12 +114,19 @@
     .search-group {
         width: calc(100% - 48px);
     }
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+    }
     .search_input {
         font-size: 1rem;
         width: 100%;
         height: 2.3em;
         padding-left: 15px;
-        border: 0px solid #A3D0C3;
+        padding-right: 11.1%;
+        border: 2px solid #027B89;
         border-radius: 2em;
         outline: none;
         background: #ffffff;
@@ -207,7 +213,7 @@
         width: 70%;
     }
     .contacts {
-        width: 13%;
+        max-width: 13%;
     }
     .section_items_list,
     .contacts_list {
@@ -215,6 +221,12 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+    }
+    .section_item {
+        margin-right: 15px;
+    }
+    .section_item:last-child {
+        margin-right: 0px;
     }
     .section_link {
         font-size: 1.5vw;
@@ -291,17 +303,21 @@
         position: relative;
         width: 100%;
     }
+    .search_group {
+        width: calc(100% - 48px);
+    }
     .search_input {
         font-size: 1rem;
         width: 100%;
         height: 2.1em;
         padding-left: 15px;
-        border: 0px solid #A3D0C3;
+        border: 2px solid #027B89;
         border-radius: 2em;
         outline: none;
         background: #ffffff;
         color: #83B5B9;
         box-shadow: inset 0px 3px 4px grey;
+        scroll-padding-right: 17%;
     }
     .search_input::placeholder {
         color: #83B5B9;
@@ -310,6 +326,12 @@
     .search_input:hover,
     .search_input:focus {
         border: 2px solid #D2F296;
+    }
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
     }
     .search_button {
         position: absolute;
@@ -370,7 +392,7 @@
         margin-top: 2px;
     }
     .item_icon:hover {
-        width: 2.8vw;
+        transform: scale(1.2);
         fill: #D2F296;
     }
     .icon_text {
@@ -407,10 +429,7 @@
         padding: 0.7% 6%;
     }
     .navigator_sections {
-        width: 57%;
-    }
-    .contacts {
-        width: 28%;
+        max-width: 57%;
     }
     .section_items_list,
     .contacts_list {
@@ -420,6 +439,12 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+    }
+    .section_item {
+        margin-right: 15px;
+    }
+    .section_item:last-child {
+        margin-right: 0px;
     }
     .section_link {
         font-size: 1.15vw;
@@ -438,8 +463,10 @@
         margin-right: 1em;
     }
     .contact_icon.number {
-        width: 49%;
-        max-width: 49%;
+        width: 51%;
+        max-width: 51%;
+    }
+    .contact_icon:last-child {
         margin-right: 0px;
     }
     .telephone_number {
@@ -458,12 +485,11 @@
     .facebook_up .item_icon_contact,
     .vkontakte_up .item_icon_contact {
         fill: #ffffff;
-    } 
+    }
     .facebook_up .item_icon_contact:hover,
     .vkontakte_up .item_icon_contact:hover {
         fill: #D978B0;
-    } 
-    
+    }
     .caption_container {
         width: 100%;
         display: flex;
@@ -520,10 +546,13 @@
         position: relative;
         width: 100%;
     }
+    .search_group {
+        width: calc(100% - 48px);
+    }
     .search_input {
         width: 100%;
-        padding: 0.9vw 1.2vw;
-        border: 0px solid #A3D0C3;
+        padding: 0.9vw 11.2% 0.9vw 1.2vw;
+        border: 2px solid #027B89;
         border-radius: 2em;
         outline: none;
         background: #ffffff;
@@ -537,6 +566,12 @@
     .search_input:hover,
     .search_input:focus {
         border: 2px solid #D2F296;
+    }
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
     }
     .search_button {
         position: absolute;
@@ -598,7 +633,7 @@
         width: 2.25vw;
     }
     .item_icon:hover {
-        width: 2.75vw;
+        transform: scale(1.2);
         fill: #D2F296;
     }
     .icon_text {
