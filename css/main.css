@@ -211,7 +211,7 @@
        }
        
        .link_name_book {
-           display: inline_block;
+           display: block;
            color: #001D5B;
            word-wrap: normal;
        }

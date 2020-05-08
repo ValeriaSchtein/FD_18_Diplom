@@ -2,7 +2,7 @@
      display: none;
  }
  
- .mobile_versia.footer {
+ .mobile_version.footer {
      position: relative;
      display: flex;
      flex-direction: column;
@@ -16,7 +16,7 @@
      color: #ffffff;
  }
  
- .up_part .brend_atributs {
+ .up_part .brend_attributes {
      justify-content: flex-start;
  }
  
@@ -231,7 +231,7 @@
          font-weight: 300;
          margin-top: -3%;
      }
-     .mobile_versia.footer {
+     .mobile_version.footer {
          display: none;
      }
  }
@@ -252,7 +252,7 @@
          justify-content: space-between;
          align-items: center;
      }
-     .brend_atributs {
+     .brend_attributes {
          display: flex;
          flex-direction: row;
          flex-wrap: nowrap;
@@ -415,7 +415,7 @@
          font-weight: 300;
          margin-top: 1%;
      }
-     .mobile_versia.footer {
+     .mobile_version.footer {
          display: none;
      }
  }
